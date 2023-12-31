@@ -16,13 +16,19 @@ body {
   background-repeat: no-repeat;
 }
 
+.supportpage {
+  background: url("../assets/img/supportbg.png") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .navbar {
   padding: 30px 110px;
-  background: var(--Bg) !important;
+  background: var(--Bg);
 }
 
 .navbar-nav {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 60px;
@@ -162,6 +168,45 @@ body {
   font-weight: 400;
 }
 
+.modal-form {
+  border: 1px solid #B8B8B8;
+  padding: 40px 25px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.modal-form .form-control {
+  color: #A7A6A4;
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  &::placeholder {
+    color: #A7A6A4 !important;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.form-p {
+  color: #A7A6A4 !important;
+  font-family: 'Gilroy-Medium', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+#cvv::-webkit-input-placeholder::before { 
+  content: ' ';
+  position: absolute;
+  top: 2px; /* adjust icon position */
+  left: 0px;
+  width: 14px; /* size of a single icon */
+  height: 14px;
+  background-image: url("../assets/img/cvv.png"); /* all icons in a single file */
+  background-repeat: no-repeat;
+  background-position: -48px 0px; /* position of the right icon */
+}
 
 @media (max-width: 768px) {
   .navbar {
@@ -190,7 +235,68 @@ body {
   }
 
   .wrapper {
-    padding: 20px !important;
+    padding: 40px 20px !important;
   }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  .wrapper-text {
+    font-size: 16px;
+  }
+
+  .custom-btn {
+    font-size: 18px;
+    padding: 9px 34px;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+
+  .form-control {
+    font-size: 18px;
+
+    &&::placeholder {
+      font-size: 18px;
+    }
+  }
+
+  .agreement-text {
+    font-size: 16px;
+  }
+
+  .checkbox {
+    width: 19.2px;
+    height: 19.2px;
+  }
+
+  .nav-btn.large {
+    font-size: 18px;
+  }
+
+  .modal-dialog {
+    width: 100%;
+    margin: 0;
+  }
+
+  .modal-content {
+    padding: 30px 10px
+  }
+
+  .modal-body p {
+    font-size: 18px;
+  }
+
+  .modal-form .form-control {
+    font-size: 16px;
+  }
+
+  .form-p {
+    font-size: 12px !important;
+  }
+
 
 }
