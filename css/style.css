@@ -347,6 +347,38 @@ body {
   line-height: 24px; /* 109.091% */
 }
 
+.thanks-footer {
+  background: url("../assets/img/mainbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 65px 135px;
+
+}
+
+.line {
+  height: 1px;
+  width: 0; /* Start with no width */
+  background-color: #F16835; /* Set the background color */
+  animation: fillLine 3s infinite; /* Make the animation repeat forever */
+}
+
+@keyframes fillLine {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.footer-text {
+  color: var(--black);
+  text-align: justify;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
@@ -466,4 +498,90 @@ body {
     font-size: 18px;
   }
   
+  #thankspage .title {
+    color: #362E2C;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 128%; /* 30.72px */
+  }
+
+  #thankspage .subtitle {
+    color: #362E2C;
+    text-align: center;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: -0.24px;
+  }
+
+  .tel-mail {
+    margin-top: 32px !important;
+  }
+
+  .telmail-data {
+    color: #362E2C;
+
+    /* H6 mob */
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px; /* 135.714% */
+  }
+  
+  .telmail-data span {
+    color: #362E2C;
+
+    /* Body mob2 */
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  .add-data {
+    color: #362E2C;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .social-media .telmail-data span {
+    color: #362E2C;
+    font-variant-numeric: slashed-zero;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+    letter-spacing: -0.091px;
+  }
+
+  .contacts .telmail-data span {
+    color: #362E2C;
+    font-variant-numeric: slashed-zero;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+    letter-spacing: -0.091px;
+  }
+
+  .contact-item {
+    margin-bottom: 16px;
+  }
+
+  .wrapper-more-service {
+    padding: 24px 35px;
+  }
+
+  .line {
+    display: none !important;
+  }
+
+  .thanks-footer {
+    padding: 35px 60px;
+  }
 }
