@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
   --primary: #F16835;
@@ -228,6 +228,125 @@ body {
   height: auto;
 }
 
+.custom-navbar {
+  background: var(--primary);
+  padding: 35px 135px;
+}
+
+.custom-navbar .nav-item {
+  display: inline-flex;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  font-family: 'Gilroy-Medium';
+  font-size: 33.4px;
+  font-weight: 600;
+}
+
+.custom-navbar .nav-item svg {
+  margin-right: -24px;
+}
+
+#thankspage .title {
+  color: var(--black);
+  text-align: center;
+
+  /* H3 */
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px; /* 120.833% */
+  margin-bottom: 17px;
+}
+
+#thankspage .subtitle {
+  color: var(--black);
+  text-align: center;
+
+  /* body2 */
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 134%; /* 29.48px */
+  margin-bottom: 10px;
+}
+
+.telmail-data {
+  color: var(--black);
+
+  /* Body Desktop2 */
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+}
+
+.telmail-data span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 120%; /* 26.4px */
+}
+
+.add-data {
+  color: var(--black);
+  
+  /* Body Desktop4 */
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.social-media-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contacts-p {
+  color: var(--black);
+  font-family: 'Gilroy-Medium';
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.contacts-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.wrapper-more-service {
+  padding: 40px 135px;
+}
+
+.title-service {
+  color: var(--primary);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px; /* 118.75% */
+}
+
+.card-title {
+  color: #362E2C;
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px; /* 109.091% */
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
@@ -338,4 +457,13 @@ body {
     margin-right: 0px !important;
   }
 
+  .custom-navbar .container-fluid {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .custom-navbar .nav-item {
+    font-size: 18px;
+  }
+  
 }
