@@ -8,3 +8,6 @@ function makeActivePrice(button) {
   button.classList.add('active');
 }
 
+document.getElementById('homeButton').addEventListener('click', function() {
+  window.location.href = 'index.html';
+});
