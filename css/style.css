@@ -357,19 +357,32 @@ body {
 
 .line {
   height: 1px;
-  width: 0; /* Start with no width */
-  background-color: #F16835; /* Set the background color */
-  animation: fillLine 3s infinite; /* Make the animation repeat forever */
+  width: 100%; /* Set initial width */
+  background-color: #C5C5C5; /* Initial background color */
+  position: relative;
+  overflow: hidden;
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #F16835; /* Color to animate to */
+  left: -100%;
+  top: 0;
+  animation: fillLine 3s infinite linear;
 }
 
 @keyframes fillLine {
   0% {
-    width: 0;
+    left: -100%;
   }
   100% {
-    width: 100%;
+    left: 0;
   }
 }
+
 .footer-text {
   color: var(--black);
   text-align: justify;
@@ -377,6 +390,85 @@ body {
   font-size: 14px;
   font-weight: 400;
   margin-top: 15px;
+}
+
+
+#articlespage .breadcrumb-item, a {
+  color: #8F8A87;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.news-title {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 45px; /* 93.75% */
+  margin-bottom: 16px;
+}
+
+.news-text {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 107.692% */
+  margin-bottom: 16px;
+}
+
+.news-date {
+  color: #8F8A87;
+
+  /* body3 */
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 135%; /* 27px */
+}
+
+.news-arrow {
+  cursor: pointer;
+}
+
+.footer {
+  background: #362E2C;
+  padding: 35px 110px;
+}
+
+.footer-title {
+  color: #FFF;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px */
+}
+
+.footer-contacts p, .footer-link {
+  color: #FFF;
+  font-feature-settings: 'calt' off;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
+.footer .end-text {
+  color: rgba(255, 255, 255, 0.28);
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+}
+
+.footer-left-block {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-width: 768px) {
