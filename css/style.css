@@ -615,7 +615,7 @@ body {
   padding: 20px 40px;
 }
 
-#support {
+#support, #team, #shefstvo, #help, #articles {
   padding-top: 135px;
 }
 
@@ -637,7 +637,6 @@ body {
 
 #support .video-container {
   background: #9F9F9F;
-  width: 810px;
   height: 455px;
 }
 
@@ -652,6 +651,54 @@ body {
 
 #support .cst-btn {
   margin-top: 110px;
+}
+
+#team .subtitle {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+
+.title-h5 {
+  color: #362E2C;
+
+  /* h5 */
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px; /* 118.182% */
+}
+
+.more-shefstvo {
+  gap: 16px;
+}
+
+.more-shefstvo-text {
+  color: var(--primary, #F16835);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#help .cst-btn {
+  margin-top: 20px;
+}
+
+.more-articles {
+  color: #362E2C;
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.article-subtitle {
+  color: #362E2C;
+
+  /* body3 */
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 135%; /* 27px */
 }
 
 @media (max-width: 768px) {
