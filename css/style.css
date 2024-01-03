@@ -542,6 +542,77 @@ body {
   line-height: 135%; /* 35.1px */
 }
 
+#indexpage #aboutus .title-h2 {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+#indexpage #aboutus .wrapper-text {
+  line-height: 32px; /* 123.077% */
+}
+
+#aboutus {
+  margin-top: 130px;
+  margin-bottom: 150px;
+}
+
+.title-h2 {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.arrows {
+  display: flex;
+  gap: 36px;
+}
+
+.service-card-title {
+  color: #362E2C;
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 46.8px */
+}
+
+#ourservice .line {
+  margin-top: 70px;
+}
+
+.divider-contact {
+  display: flex;
+  padding: 100px 272px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.60);
+}
+
+.divider-text {
+  color: #362E2C;
+  /* h2 */
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.divider-text span {
+  color: var(--primary)
+}
+
+.divider-row {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.divider-contact .cst-btn {
+  padding: 20px 40px;
+}
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
