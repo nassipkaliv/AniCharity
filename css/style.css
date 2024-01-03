@@ -26,6 +26,7 @@ body {
 .navbar {
   padding: 30px 110px;
   background: var(--Bg);
+  flex-wrap: nowrap;
 }
 
 .navbar-nav {
@@ -36,6 +37,7 @@ body {
 }
 
 .nav-link {
+  display: contents;
   color: #353F4B !important;
   font-family: 'Gilroy-Medium', sans-serif;
   font-size: 24px;
@@ -517,6 +519,17 @@ body {
   text-decoration: underline;
 }
 
+#servicespage .service-title {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+#servicespage .service-row {
+  margin-bottom: 150px;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
@@ -809,6 +822,11 @@ body {
     color: #726D6B;
   }
   
+  .news-arrow svg {
+    width: 24px;
+    height: 24px;
+  }
+
   #article1page .container-article {
     padding: 0px;
   }
@@ -834,5 +852,17 @@ body {
     font-size: 16px;
   }
   
+  #servicespage .service-title {
+    font-size: 22px;
+  }
 
+  #servicespage .line {
+    display: flex !important ;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+  }
+
+  #servicespage .service-row {
+    margin-bottom: 40px;
+  }
 }
