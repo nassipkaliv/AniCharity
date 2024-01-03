@@ -503,7 +503,7 @@ body {
 }
 
 #article1page .article-text {
-  color: var(--black, #362E2C);
+  color: var(--black);
   font-family: 'Gilroy-Regular', sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -511,7 +511,7 @@ body {
 }
 
 #article1page .article-text a {
-  color: var(--black, #362E2C);
+  color: var(--black);
   font-family: 'Gilroy-Regular', sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -528,6 +528,18 @@ body {
 
 #servicespage .service-row {
   margin-bottom: 150px;
+}
+
+#indexpage .title {
+  margin-bottom: 0;
+}
+
+#indexpage .subtitle {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 135%; /* 35.1px */
 }
 
 @media (max-width: 768px) {
