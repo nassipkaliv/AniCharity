@@ -358,7 +358,8 @@ body {
 }
 
 .line {
-  height: 1px;
+  height: 4px;
+  stroke-width: 4px;
   width: 100%; /* Set initial width */
   background-color: #C5C5C5; /* Initial background color */
   position: relative;
@@ -368,7 +369,7 @@ body {
 .line::before {
   content: '';
   position: absolute;
-  height: 1px;
+  height: 4px;
   width: 100%;
   background-color: #F16835; /* Color to animate to */
   left: -100%;
@@ -613,6 +614,46 @@ body {
 .divider-contact .cst-btn {
   padding: 20px 40px;
 }
+
+#support {
+  padding-top: 135px;
+}
+
+#support .support-text {
+  color: #000;
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 120%; /* 48px */
+}
+
+#support .support-title {
+  color: var(--primary);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 134%; /* 67px */
+}
+
+#support .video-container {
+  background: #9F9F9F;
+  width: 810px;
+  height: 455px;
+}
+
+#support .video-title {
+  color: #000;
+  /* h4 */
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px; /* 118.75% */
+}
+
+#support .cst-btn {
+  margin-top: 110px;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
