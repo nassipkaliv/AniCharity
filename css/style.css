@@ -615,7 +615,7 @@ body {
   padding: 20px 40px;
 }
 
-#support, #team, #shefstvo, #help, #articles {
+#support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners {
   padding-top: 135px;
 }
 
@@ -699,6 +699,14 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 135%; /* 27px */
+}
+
+.subtitle-h2 {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 150%; /* 33px */
 }
 
 @media (max-width: 768px) {
