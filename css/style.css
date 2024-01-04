@@ -554,15 +554,11 @@ body {
   line-height: 32px; /* 123.077% */
 }
 
-#aboutus {
-  margin-top: 130px;
-  margin-bottom: 150px;
-}
 
 .title-h2 {
   color: var(--black);
   font-family: 'Gilroy-Medium', sans-serif;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 500;
 }
 
@@ -615,7 +611,7 @@ body {
   padding: 20px 40px;
 }
 
-#support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners {
+#aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice {
   padding-top: 135px;
 }
 
@@ -691,6 +687,10 @@ body {
   font-weight: 500;
 }
 
+.more-articles.aboutus {
+  margin-top: 130px;
+}
+
 .article-subtitle {
   color: #362E2C;
 
@@ -707,6 +707,52 @@ body {
   font-size: 22px;
   font-weight: 500;
   line-height: 150%; /* 33px */
+}
+
+.about-block {
+  background: var(--Grey);
+}
+
+.bignumber {
+  color: var(--black);
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 120px;
+  font-weight: 400;
+}
+
+.smalltext {
+  color: var(--black);
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 25.833px;
+  font-weight: 400;
+}
+
+.subtitle-h5 {
+  color: var(--black);
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.aboutus-divider-contact {
+  background: var(--white);
+  padding: 50px 142px 120px 142px;
+  margin-top: 135px;
+
+}
+
+
+.title-rates {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 134.236%; /* 40.271px */
+}
+
+.subtitle-a {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
 }
 
 @media (max-width: 768px) {
