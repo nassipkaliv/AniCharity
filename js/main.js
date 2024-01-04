@@ -8,6 +8,18 @@ function makeActivePrice(button) {
   button.classList.add('active');
 }
 
-document.getElementById('homeButton').addEventListener('click', function() {
-  window.location.href = 'index.html';
+$(document).ready(function() {
+  $('#collapseDiagnostics').on('shown.bs.collapse', function () {
+      $('#diagnostics-line').hide();
+  });
+
+  $('#collapseDiagnostics').on('hidden.bs.collapse', function () {
+      $('#diagnostics-line').show();
+  });
+});
+
+$(document).ready(function() {
+  $('.news-arrow').click(function() {
+      $('.arrow-icon').toggleClass('rotate');
+  });
 });

@@ -755,6 +755,25 @@ body {
   text-decoration-color: var(--primary);
 }
 
+.collapse-text {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.service-text {
+  color: #8F8A87;
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;

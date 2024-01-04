@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" />
-  <title>Статьи</title>
+  <title>Услуги</title>
 </head>
-<body class="articlespage" id="articlespage">
+<body class="veterinarpage" id="veterinarpage">
 
   <nav class="navbar navbar-expand-lg bg-transparent">
     <div class="container-fluid justify-content-end">
@@ -43,220 +43,180 @@
   <div class="wrapper">
     <div class="container-fluid">
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb mb-md-2">
           <li class="breadcrumb-item"><a href="#">Главная</a></li>
-          <li class="breadcrumb-item" aria-current="page">Статьи</li>
+          <li class="breadcrumb-item"><a href="#">Услуги</a></li>
+          <li class="breadcrumb-item"><a href="#">Ветеринарные услуги</a></li>
         </ol>
       </nav>
 
-      <h1 class="title">Статьи</h1>
+      <h1 class="title my-5">Ветеринарные услуги</h1>
       
-      <div class="row">
-        <!-- News item start -->
-        <div class="col-12 news-item">
+      <div class="row service-row">
+        <div class="col-12 services-item">
           <div class="row">
-            <!-- Image column -->
-            <div class="col-md-3">
-              <img src="assets/img/articles.png" alt="News Title" class="news-image">
+            <div class="col-10 d-flex align-items-center">
+              <div class="title-h2">Инструментальная диагностика (УЗИ/Рентген)</div>
             </div>
-            <!-- News content column -->
-            <div class="col-md-8 col-sm-8 px-3">
-              <div class="news-title">Название новости</div>
-              <p class="news-text">
-                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
-              </p>
-              <div class="news-date">22/11/2023</div>
+            <div class="col-2 d-flex align-items-center justify-content-end news-arrow" data-bs-toggle="collapse" data-bs-target="#collapseDiagnostics" aria-expanded="false" aria-controls="collapseDiagnostics">
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M44.7999 16L23.9999 38.4L3.19995 16" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
+              </svg>
+          </div>
+            <div class="collapse collapse-content my-5" id="collapseDiagnostics">
+              <div class="row">
+                <div class="col-5 left-block">
+                  <img class="img-fluid" src="assets/img/uzi.png" />
+                </div>
+                <div class="col-7 right-block d-flex flex-column justify-content-between">
+                  <div>
+                    <p class="collapse-text">
+                      Наша клиника предлагает услуги инструментальной диагностики животных. Наши специалисты выполняют ультразвуковые (УЗИ) и рентгеновские исследования диких животных.
+                    </p>
+                  </div>
+                  <div>
+                    <button class="btn cst-btn mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none">
+                        <g clip-path="url(#clip0_387_80)">
+                          <path d="M8.81998 21.4452C10.8421 23.2363 11.4669 24.9111 11.4443 26.2555C11.4108 28.2452 9.39503 29.8457 7.44563 29.4457C6.59698 29.2716 5.64871 28.7809 4.72834 27.6905C2.52113 25.0755 3.09039 21.8228 3.67933 21.0737C4.20565 20.3192 5.97063 19.3373 8.81998 21.4452Z" fill="#362E2C"/>
+                          <path d="M12.0634 10.2661C7.80421 6.49323 8.99035 3.14792 10.3966 2.02421C10.4272 1.99973 10.4556 1.97708 10.4869 1.95338C10.8623 1.66845 13.5581 -0.166353 16.6119 3.32345C18.7337 5.74816 18.4327 9.84628 17.778 10.6791C17.1929 11.5178 15.2309 12.6093 12.0634 10.2661Z" fill="#362E2C"/>
+                          <path d="M9.88738 13.6644C8.07598 7.44856 4.34972 7.64004 2.55412 8.64753C2.18431 8.90768 1.92766 9.21549 1.76058 9.552C0.349192 12.3945 3.86172 15.2979 6.76802 16.5727C7.59531 16.9355 8.25214 17.0871 8.76677 17.0964C10.267 17.1238 10.3072 15.105 9.88738 13.6644Z" fill="#362E2C"/>
+                          <path d="M22.0099 7.1417C20.9155 13.5229 24.3491 14.9831 26.4045 14.8639C26.8509 14.7921 27.2165 14.6278 27.5141 14.3985C30.028 12.4615 28.1422 8.31278 26.088 5.89374C25.5033 5.20516 24.9792 4.78121 24.5207 4.54734C23.184 3.86558 22.2636 5.66278 22.0099 7.1417Z" fill="#362E2C"/>
+                          <path d="M14.8075 25.2312C15.6611 20.7306 14.9973 19.2553 15.4992 18.5408C17.2511 15.7245 22.4689 19.2877 24.7168 18.437C32.4743 15.5012 32.2292 21.3428 29.9389 22.6944C23.5805 25.9099 23.1724 28.8713 20.082 31.4799C13.8034 35.6166 13.5399 29.0347 14.8075 25.2312Z" fill="#362E2C"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_387_80">
+                            <rect width="33" height="33" fill="white" transform="translate(0 0.5)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Записаться на прием
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-5">
+                <div class="row">
+                  <div class="col-10">
+                    <div class="service-text">Услуги</div>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="service-text ms-4">Стоимость</div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-10">
+                    <div class="collapse-text">Рентгенографическое исследование в ночное время для исключения патологий, требующих экстренного лечения</div>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="collapse-text ms-4">1 300 Р</div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-10">
+                    <div class="collapse-text">Рентгенографическое исследование в 1 проекции</div>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="collapse-text ms-4">1 700 Р</div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-10">
+                    <div class="collapse-text">Рентген брюшной полости</div>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="collapse-text ms-4">1 300 Р</div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-10">
+                    <div class="collapse-text">Рентгеноконтрастное исследование желудочно-кишечного тракта с сульфатом бария, без учета контрастного вещества</div>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="collapse-text ms-4">8 400 Р</div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-10">
+                    <div class="collapse-text">Экскреторная урография, без стоимости контрастного вещества</div>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="collapse-text ms-4">8 400 Р</div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-10">
+                    <div class="collapse-text">Экскреторная урография, без стоимости контрастного вещества</div>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="collapse-text ms-4">1 750 Р</div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn cst-btn mx-auto mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none">
+                  <g clip-path="url(#clip0_387_80)">
+                    <path d="M8.81998 21.4452C10.8421 23.2363 11.4669 24.9111 11.4443 26.2555C11.4108 28.2452 9.39503 29.8457 7.44563 29.4457C6.59698 29.2716 5.64871 28.7809 4.72834 27.6905C2.52113 25.0755 3.09039 21.8228 3.67933 21.0737C4.20565 20.3192 5.97063 19.3373 8.81998 21.4452Z" fill="#362E2C"/>
+                    <path d="M12.0634 10.2661C7.80421 6.49323 8.99035 3.14792 10.3966 2.02421C10.4272 1.99973 10.4556 1.97708 10.4869 1.95338C10.8623 1.66845 13.5581 -0.166353 16.6119 3.32345C18.7337 5.74816 18.4327 9.84628 17.778 10.6791C17.1929 11.5178 15.2309 12.6093 12.0634 10.2661Z" fill="#362E2C"/>
+                    <path d="M9.88738 13.6644C8.07598 7.44856 4.34972 7.64004 2.55412 8.64753C2.18431 8.90768 1.92766 9.21549 1.76058 9.552C0.349192 12.3945 3.86172 15.2979 6.76802 16.5727C7.59531 16.9355 8.25214 17.0871 8.76677 17.0964C10.267 17.1238 10.3072 15.105 9.88738 13.6644Z" fill="#362E2C"/>
+                    <path d="M22.0099 7.1417C20.9155 13.5229 24.3491 14.9831 26.4045 14.8639C26.8509 14.7921 27.2165 14.6278 27.5141 14.3985C30.028 12.4615 28.1422 8.31278 26.088 5.89374C25.5033 5.20516 24.9792 4.78121 24.5207 4.54734C23.184 3.86558 22.2636 5.66278 22.0099 7.1417Z" fill="#362E2C"/>
+                    <path d="M14.8075 25.2312C15.6611 20.7306 14.9973 19.2553 15.4992 18.5408C17.2511 15.7245 22.4689 19.2877 24.7168 18.437C32.4743 15.5012 32.2292 21.3428 29.9389 22.6944C23.5805 25.9099 23.1724 28.8713 20.082 31.4799C13.8034 35.6166 13.5399 29.0347 14.8075 25.2312Z" fill="#362E2C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_387_80">
+                      <rect width="33" height="33" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                Записаться на прием
+              </button>
+            </div>
+          </div>
+          <div class="line my-5" id="diagnostics-line"></div>
+        </div>
+        <div class="col-12 services-item">
+          <div class="row">
+            <div class="col-10 d-flex align-items-center">
+              <div class="title-h2">Эндокринология</div>
             </div>
             <!-- Arrow column -->
-            <div class="col-md-1 d-flex align-items-center justify-content-center news-arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="53" viewBox="0 0 49 53" fill="none">
-                <g clip-path="url(#clip0_335_820)">
-                <path d="M25.0249 6.95551L44.4142 26.5502M44.4142 26.5502L22.596 46.1447M44.4142 26.5502H0.777832" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_335_820">
-                <rect width="48" height="52.3636" fill="white" transform="translate(0.777832 0.161926)"/>
-                </clipPath>
-                </defs>
+            <div class="col-2 d-flex align-items-center justify-content-end news-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M44.7999 16L23.9999 38.4L3.19995 16" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
               </svg>
             </div>
           </div>
           <div class="line my-5"></div>
         </div>
-
-        <div class="col-12 news-item-mobile d-none">
-          <div class="row w-100">
-            <!-- News content column -->
-            <div class="col-10">
-              <div class="news-title">Название новости</div>
-              <p class="news-text">
-                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
-              </p>
-              <div class="news-date">22/11/2023</div>
-            </div>
-            <!-- Arrow column -->
-            <div class="col-2 d-flex align-items-center justify-content-center news-arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="53" viewBox="0 0 49 53" fill="none">
-                <g clip-path="url(#clip0_335_820)">
-                <path d="M25.0249 6.95551L44.4142 26.5502M44.4142 26.5502L22.596 46.1447M44.4142 26.5502H0.777832" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_335_820">
-                <rect width="48" height="52.3636" fill="white" transform="translate(0.777832 0.161926)"/>
-                </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-          <div class="line my-3"></div>
-        </div>
-
-        <div class="col-12 news-item">
+        <div class="col-12 services-item">
           <div class="row">
-            <!-- Image column -->
-            <div class="col-md-3">
-              <img src="assets/img/articles.png" alt="News Title" class="news-image">
-            </div>
-            <!-- News content column -->
-            <div class="col-md-8 col-sm-8  px-3">
-              <div class="news-title">Название новости</div>
-              <p class="news-text">
-                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
-              </p>
-              <div class="news-date">22/11/2023</div>
+            <div class="col-10 d-flex align-items-center">
+              <div class="title-h2">Лабораторная диагностика</div>
             </div>
             <!-- Arrow column -->
-            <div class="col-md-1 d-flex align-items-center justify-content-center news-arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="53" viewBox="0 0 49 53" fill="none">
-                <g clip-path="url(#clip0_335_820)">
-                <path d="M25.0249 6.95551L44.4142 26.5502M44.4142 26.5502L22.596 46.1447M44.4142 26.5502H0.777832" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_335_820">
-                <rect width="48" height="52.3636" fill="white" transform="translate(0.777832 0.161926)"/>
-                </clipPath>
-                </defs>
+            <div class="col-2 d-flex align-items-center justify-content-end news-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M44.7999 16L23.9999 38.4L3.19995 16" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
               </svg>
             </div>
           </div>
           <div class="line my-5"></div>
         </div>
-
-        <div class="col-12 news-item-mobile d-none">
-          <div class="row w-100">
-            <!-- News content column -->
-            <div class="col-10">
-              <div class="news-title">Название новости</div>
-              <p class="news-text">
-                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
-              </p>
-              <div class="news-date">22/11/2023</div>
-            </div>
-            <!-- Arrow column -->
-            <div class="col-2 d-flex align-items-center justify-content-center news-arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="53" viewBox="0 0 49 53" fill="none">
-                <g clip-path="url(#clip0_335_820)">
-                <path d="M25.0249 6.95551L44.4142 26.5502M44.4142 26.5502L22.596 46.1447M44.4142 26.5502H0.777832" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_335_820">
-                <rect width="48" height="52.3636" fill="white" transform="translate(0.777832 0.161926)"/>
-                </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-          <div class="line my-3"></div>
-        </div>
-
-        <div class="col-12 news-item">
+        <div class="col-12 services-item">
           <div class="row">
-            <!-- Image column -->
-            <div class="col-md-3">
-              <img src="assets/img/articles.png" alt="News Title" class="news-image">
-            </div>
-            <!-- News content column -->
-            <div class="col-md-8 col-sm-8 px-3">
-              <div class="news-title">Название новости</div>
-              <p class="news-text">
-                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
-              </p>
-              <div class="news-date">22/11/2023</div>
+            <div class="col-10 d-flex align-items-center">
+              <div class="title-h2">Инструментальная диагностика (УЗИ/Рентген)</div>
             </div>
             <!-- Arrow column -->
-            <div class="col-md-1 d-flex align-items-center justify-content-center news-arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="53" viewBox="0 0 49 53" fill="none">
-                <g clip-path="url(#clip0_335_820)">
-                <path d="M25.0249 6.95551L44.4142 26.5502M44.4142 26.5502L22.596 46.1447M44.4142 26.5502H0.777832" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_335_820">
-                <rect width="48" height="52.3636" fill="white" transform="translate(0.777832 0.161926)"/>
-                </clipPath>
-                </defs>
+            <div class="col-2 d-flex align-items-center justify-content-end news-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M44.7999 16L23.9999 38.4L3.19995 16" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
               </svg>
             </div>
           </div>
           <div class="line my-5"></div>
         </div>
-
-        <div class="col-12 news-item-mobile d-none">
-          <div class="row w-100">
-            <!-- News content column -->
-            <div class="col-10">
-              <div class="news-title">Название новости</div>
-              <p class="news-text">
-                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
-              </p>
-              <div class="news-date">22/11/2023</div>
-            </div>
-            <!-- Arrow column -->
-            <div class="col-2 d-flex align-items-center justify-content-center news-arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="53" viewBox="0 0 49 53" fill="none">
-                <g clip-path="url(#clip0_335_820)">
-                <path d="M25.0249 6.95551L44.4142 26.5502M44.4142 26.5502L22.596 46.1447M44.4142 26.5502H0.777832" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_335_820">
-                <rect width="48" height="52.3636" fill="white" transform="translate(0.777832 0.161926)"/>
-                </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-          <div class="line my-3"></div>
-        </div>
-
-        <div class="col-12 news-item-mobile d-none">
-          <div class="row w-100">
-            <!-- News content column -->
-            <div class="col-10">
-              <div class="news-title">Название новости</div>
-              <p class="news-text">
-                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
-              </p>
-              <div class="news-date">22/11/2023</div>
-            </div>
-            <!-- Arrow column -->
-            <div class="col-2 d-flex align-items-center justify-content-center news-arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="53" viewBox="0 0 49 53" fill="none">
-                <g clip-path="url(#clip0_335_820)">
-                <path d="M25.0249 6.95551L44.4142 26.5502M44.4142 26.5502L22.596 46.1447M44.4142 26.5502H0.777832" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_335_820">
-                <rect width="48" height="52.3636" fill="white" transform="translate(0.777832 0.161926)"/>
-                </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-          <div class="line my-3"></div>
-        </div>
-
-
       </div>
-      
     </div>
   </div>
 
@@ -439,9 +399,8 @@
 
   </footer>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
