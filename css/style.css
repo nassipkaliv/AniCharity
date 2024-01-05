@@ -611,7 +611,7 @@ body {
   padding: 20px 40px;
 }
 
-#aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare {
+#aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka {
   padding-top: 135px;
 }
 
@@ -791,6 +791,31 @@ body {
   font-size: 24px;
   font-weight: 300;
   margin-top: 100px;
+}
+
+#perevozka {
+  margin-top: 100px;
+}
+
+.zayavka-container {
+  background: var(--white);
+  padding: 100px 80px;
+}
+
+.form-row {
+  gap: 60px;
+}
+
+.form-check-text {
+  color: var(--black);
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 143.5%; /* 34.44px */
+}
+
+.form-bottom-row {
+  margin-top: 80px;
 }
 
 @media (max-width: 768px) {
