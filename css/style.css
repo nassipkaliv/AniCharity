@@ -818,6 +818,15 @@ body {
   margin-top: 80px;
 }
 
+.zayavka-container-accepted .title {
+  color: var(--primary);
+}
+
+.zayavka-container-accepted {
+  background: var(--white);
+  padding: 140px 120px;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
