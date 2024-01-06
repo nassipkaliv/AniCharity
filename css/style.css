@@ -827,6 +827,15 @@ body {
   padding: 140px 120px;
 }
 
+.title-h4 {
+  color: var(--black);
+  /* h4 */
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px; /* 118.75% */
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
