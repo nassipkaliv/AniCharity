@@ -14,6 +14,7 @@ body {
   background: url("../assets/img/mainbg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .supportpage {
@@ -1313,4 +1314,94 @@ body {
   #servicespage .service-row {
     margin-bottom: 40px;
   }
+
+  #aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room {
+    padding-top: 75px;
+  }
+  
+
+  .aboutusintro {
+    display: none;
+  }
+
+  .aboutusintromobile {
+    display: block !important;
+  }
+
+  .aboutusintromobile-title {
+    color: var(--black);
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  .subtitle-h2 {
+    font-size: 16px;
+  }
+
+  .bignumber {
+    font-size: 47px;
+  }
+
+  .smalltext {
+    font-size: 14px;
+  }
+
+  .title-h2 {
+    font-size: 26px;
+  }
+
+  .title-h5 {
+    font-size: 14px;
+  }
+
+  .subtitle-h5 {
+    font-size: 14px;
+  }
+
+  .team {
+    display: none;
+  }
+
+  .teammobile {
+    display: block !important;
+  }
+
+  .team-show {
+    color: var(--black);
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+  }
+
+  .aboutus-divider-contact {
+    padding: 20px;
+  }
+
+  .divider-text {
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  .divider-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .more-articles-div {
+    display: none;
+  }
+
+  .full-rate {
+    display: flex;
+    justify-content: center;
+  }
+
+  .more-articles.first {
+    display: none !important;
+  }
+
 }

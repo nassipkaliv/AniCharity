@@ -59,3 +59,26 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+var mySwiper = new Swiper('.mySwiper', {
+  // Optional parameters
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // Enable swiper in both directions
+  loop: true,
+  // Responsive breakpoints
+  breakpoints: {
+
+    780: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 40
+    }
+  }
+});
