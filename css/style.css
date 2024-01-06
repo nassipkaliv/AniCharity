@@ -386,6 +386,8 @@ body {
   }
 }
 
+
+
 .footer-text {
   color: var(--black);
   text-align: justify;
@@ -611,7 +613,7 @@ body {
   padding: 20px 40px;
 }
 
-#aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka {
+#aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room {
   padding-top: 135px;
 }
 
@@ -834,6 +836,86 @@ body {
   font-size: 32px;
   font-weight: 500;
   line-height: 38px; /* 118.75% */
+}
+
+.tab-panel-title {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tab-panel-number {
+  color: var(--black);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tab-panel-number.active {
+  color: var(--primary);
+}
+
+.tab-panel-title.active {
+  color: var(--primary);
+}
+
+.row-room {
+  margin-bottom: 80px;
+}
+
+.pagination {
+  justify-content: start; 
+  gap: 16px;
+}
+
+.page-link {
+  color: var(--primary); 
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.page-link:hover {
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 50%; 
+  width: 32px; 
+  height: 32px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-item.active .page-link {
+  background-color: var(--primary);
+  color: white; 
+  border-radius: 50%; 
+  width: 32px; 
+  height: 32px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-next .page-link {
+  background: none;
+  color: var(--black);
+}
+
+.pagination-next .page-link:hover {
+  color: var(--primary);
+  border: none;
+  width: auto;
+  height: auto;
+  background: none;
 }
 
 @media (max-width: 768px) {
