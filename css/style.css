@@ -1403,5 +1403,49 @@ body {
   .more-articles.first {
     display: none !important;
   }
+  
+  .service-img {
+    display: none !important;
+  }
 
+  .collapse-text {
+    font-size: 16px;
+  }
+
+  .price-row {
+    display: none;
+  }
+
+  .service-text {
+    display: block !important;
+    font-size: 18px;
+  }
+
+  .price-desktop {
+    display: none !important;
+  }
+
+  .price-mobile {
+    display: block !important;
+  }
+
+  .collapse-text.price {
+    color: var(--primary);
+  }
+
+  .prepare-img {
+    display: none;
+  }
+
+  ol {
+    margin-top: 1rem;
+  }
+
+  .prepare-text, .prepare-btn {
+    display: none;
+  }
+
+  #prepare {
+    margin-bottom: 40px;
+  }
 }
