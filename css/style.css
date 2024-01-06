@@ -918,6 +918,66 @@ body {
   background: none;
 }
 
+.btn-play {
+  position: relative;
+  width: 89px;
+  height: 89px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.btn-play::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-out;
+}
+
+.btn-play:hover::before {
+  border-color: #F16835;
+  animation: drawBorder 2s ease-in-out infinite;
+}
+
+@keyframes drawBorder {
+  0%, 100% {
+    border-color: #F16835;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  25% {
+    border-right-color: #F16835;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    border-right-color: #F16835;
+    border-bottom-color: #F16835;
+    border-left-color: transparent;
+  }
+  75% {
+    border-right-color: #F16835;
+    border-bottom-color: #F16835;
+    border-left-color: #F16835;
+  }
+}
+
+.btn-play svg {
+  z-index: 1;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;

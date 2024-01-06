@@ -254,10 +254,12 @@
           </div>
           <div class="col-6 right-block">
             <div class="video-container d-flex align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89" fill="none">
-                <path d="M33.4336 67.5556V21.4445L65.7114 44.5001L33.4336 67.5556Z" stroke="#F16835" stroke-width="4.61111" stroke-linejoin="round"/>
-                <circle cx="44.5" cy="44.5" r="41.5" fill="white" fill-opacity="0.5"/>
-              </svg>
+              <button class="btn-play">
+                <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89" fill="none">
+                  <circle cx="44.5" cy="44.5" r="41.5" fill="white" fill-opacity="0.5"/>
+                  <path d="M33.4336 67.5556V21.4445L65.7114 44.5001L33.4336 67.5556Z" stroke="#F16835" stroke-width="4.61111" stroke-linejoin="round"/>
+                </svg>
+              </button>
             </div>
             <h4 class="video-title mt-3">Амурский тигр</h4>
           </div>
@@ -358,16 +360,6 @@
               обитателей
             </p>
 
-            <div class="more-shefstvo d-flex flex-row">
-              <a class="more-shefstvo-text" data-bs-toggle="collapse" href="#moreAboutShefstvo" role="button" aria-expanded="false" aria-controls="moreAboutShefstvo">
-                Подробнее о шефстве
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M1.7168 11.0776L12.3857 21.7466L11.3252 22.8074L0.656289 12.1384L1.7168 11.0776Z" fill="#F16835"/>
-                  <rect x="21.1719" y="11.3164" width="1.5" height="15.0882" transform="rotate(45 21.1719 11.3164)" fill="#F16835"/>
-                  <rect x="10.7344" y="0.750488" width="1.5" height="21.4667" fill="#F16835"/>
-                </svg>
-              </a>
-            </div>
             <div class="collapse" id="moreAboutShefstvo">
               <p class="wrapper-text">
                 Это означает, что вы можете поддержать наши усилия по защите и сохранению многих видов диких животных, предоставив им необходимые ресурсы и заботу. Как шефствующий, вы будете иметь возможность следить за жизнью вашего подопечного, получать регулярные обновления о его состоянии и принимать участие в его реабилитации и освобождении в естественную среду обитания.
@@ -376,6 +368,18 @@
                 Ваше шефство поможет нам обеспечить животных всем необходимым - от питания и медицинского ухода до обучения и развития программ по сохранению их видов. Вы также можете помочь нам привлечь внимание общественности к проблемам, связанным с дикими животными, и повысить уровень осведомленности о необходимости их защиты.
               </p>
             </div>
+            
+            <div class="more-shefstvo d-flex flex-row justify-content-between">
+              <a class="more-shefstvo-text" data-bs-toggle="collapse" href="#moreAboutShefstvo" role="button" aria-expanded="false" aria-controls="moreAboutShefstvo">
+                <span class="shefstvo-toggle-text">Подробнее о шефстве</span>
+                <svg class="shefstvo-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M1.7168 11.0776L12.3857 21.7466L11.3252 22.8074L0.656289 12.1384L1.7168 11.0776Z" fill="#F16835"/>
+                  <rect x="21.1719" y="11.3164" width="1.5" height="15.0882" transform="rotate(45 21.1719 11.3164)" fill="#F16835"/>
+                  <rect x="10.7344" y="0.750488" width="1.5" height="21.4667" fill="#F16835"/>
+                </svg>
+              </a>
+            </div>
+            
             
             <button class="btn cst-btn">
               <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none">
@@ -419,17 +423,22 @@
           </div>
           </div>
       </div>
-      <div class="help" id="help">
+      <div class="prepare" id="prepare"> 
         <div class="row">
-          <div class="col-3">
+          <div class="col-4 left-block d-flex flex-column justify-content-between">
+            <div>
             <h2 class="title-h2">Сообщить <br>
               о проблеме</h2>
-              <p class="subtitle-h2 my-5 pb-4">
+            </div>
+            <div class="my-5">
+              <p class="subtitle-h2">
                 Сообщите нам о любой проблеме
                 с диким животным и мы поможем вам
-                в ближайшее время 
+                в ближайшее время
               </p>
-              <button class="btn cst-btn">
+              </div>
+              <div>
+              <button class="btn cst-btn mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none">
                   <g clip-path="url(#clip0_387_80)">
                     <path d="M8.81998 21.4452C10.8421 23.2363 11.4669 24.9111 11.4443 26.2555C11.4108 28.2452 9.39503 29.8457 7.44563 29.4457C6.59698 29.2716 5.64871 28.7809 4.72834 27.6905C2.52113 25.0755 3.09039 21.8228 3.67933 21.0737C4.20565 20.3192 5.97063 19.3373 8.81998 21.4452Z" fill="#362E2C"/>
@@ -446,8 +455,63 @@
                 </svg>
                 Сообщить нам
               </button>
+              </div>
           </div>
-          <div class="col-9"></div>
+          <div class="col-1"></div>
+          <div class="col-7 right-block">
+            <div class="col-12 services-item">
+              <div class="row">
+                <div class="col-2 d-flex align-items-center news-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" fill="none">
+                    <path d="M16.1647 2.07458L29.0909 15.1377M29.0909 15.1377L14.5455 28.2008M29.0909 15.1377H0" stroke="#F16835" stroke-width="2.90909" stroke-linecap="square"/>
+                  </svg>
+                </div>
+                <div class="col-10 d-flex align-items-center">
+                  <h4 class="title-h4">Я нашел дикое животное/птицу. Что делать?</h4>
+                </div>
+              </div>
+              <div class="prepare-line my-5"></div>
+            </div>
+            <div class="col-12 services-item">
+              <div class="row">
+                <div class="col-2 d-flex align-items-center news-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" fill="none">
+                    <path d="M16.1647 2.07458L29.0909 15.1377M29.0909 15.1377L14.5455 28.2008M29.0909 15.1377H0" stroke="#F16835" stroke-width="2.90909" stroke-linecap="square"/>
+                  </svg>
+                </div>
+                <div class="col-10 d-flex align-items-center">
+                  <h4 class="title-h4">Животное убежало</h4>
+                </div>
+              </div>
+              <div class="prepare-line my-5"></div>
+            </div>
+            <div class="col-12 services-item">
+              <div class="row">
+                <div class="col-2 d-flex align-items-center news-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" fill="none">
+                    <path d="M16.1647 2.07458L29.0909 15.1377M29.0909 15.1377L14.5455 28.2008M29.0909 15.1377H0" stroke="#F16835" stroke-width="2.90909" stroke-linecap="square"/>
+                  </svg>
+                </div>
+                <div class="col-10 d-flex align-items-center">
+                  <h4 class="title-h4">Животное ранено</h4>
+                </div>
+              </div>
+              <div class="prepare-line my-5"></div>
+            </div>
+            <div class="col-12 services-item">
+              <div class="row">
+                <div class="col-2 d-flex align-items-center news-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" fill="none">
+                    <path d="M16.1647 2.07458L29.0909 15.1377M29.0909 15.1377L14.5455 28.2008M29.0909 15.1377H0" stroke="#F16835" stroke-width="2.90909" stroke-linecap="square"/>
+                  </svg>
+                </div>
+                <div class="col-10 d-flex align-items-center">
+                  <h4 class="title-h4">Жестокое обращение с дикими животными</h4>
+                </div>
+              </div>
+              <div class="prepare-line my-5"></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="articles" id="articles">
@@ -619,7 +683,7 @@
               <p class="subtitle-h2 mt-5">Журналистские расследования</p>
             </div>
             <div>
-              <a class="more-articles d-flex flex-row align-items-center mb-0">
+              <a class="more-articles d-flex flex-row align-items-center mb-0" href="articles.html">
                 Читать все статьи
                 <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
                   <rect width="26" height="2" transform="matrix(1 0 0 -1 2.09375 2.21436)" fill="#F16835"/>
@@ -858,6 +922,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script>
+  // This script ensures that the animation restarts on mouseover
+  document.querySelector('.btn-play').addEventListener('mouseover', function(e) {
+    const before = e.target.querySelector('::before');
+    if (before) {
+      before.style.animation = 'none';
+      void before.offsetWidth; // Trigger reflow to restart animation
+      before.style.animation = '';
+    }
+  });
+</script>
 </body>
 
 </html>
