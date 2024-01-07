@@ -1367,6 +1367,10 @@ body {
     display: block !important;
   }
 
+  .team-mobile {
+    display: block !important;
+  }
+
   .team-show {
     color: var(--black);
     font-family: 'Gilroy-Medium', sans-serif;
@@ -1466,7 +1470,7 @@ body {
   }
 
   .title-h4 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .row-room {
@@ -1519,6 +1523,94 @@ body {
   }
 
   .help-mobile {
+    display: block !important;
+  }
+
+  #indexpage .subtitle {
+    font-size: 14px;
+  }
+
+  #indexpage .intro-subtitle {
+    justify-content: start !important;
+  }
+
+  #indexpage .intro-button {
+    justify-content: start !important;
+  }
+
+  .aboutus-img {
+    display: none !important;
+  }
+  
+  .service-card-title {
+    font-size: 16px;
+  }
+
+  .support {
+    display: none;
+  }
+
+  .support-mobile {
+    display: block !important;
+  }
+
+  #support .support-text {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  #support .support-title {
+    font-size: 20px;
+  }
+
+  #support .video-container {
+    background: url("../assets/img/amur.png");
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #support .video-title {
+    font-size: 22px;
+  }
+
+  .swiper-pagination {
+    text-align: left !important;
+    position: relative;
+  }
+
+  .swiper-pagination-bullet {
+    width: 5px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 10px;
+    background: var(--black);
+    margin: 0 4px; 
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 4px;
+    border-radius: 10px;
+  background: var(--primary);
+  }
+
+  .swiper-pagination-bullet-active::before {
+    content: '';
+    position: absolute;
+    left: -20px; /* Adjust as necessary */
+    top: 50%;
+    width: 16px; /* Example length of the line */
+    height: 2px; /* Example thickness of the line */
+    background: #F16835; /* Color of the line */
+    transform: translateY(-50%);
+  }
+
+  .shefstvo {
+    display: none !important;
+  }
+
+  .shefstvo-mobile {
     display: block !important;
   }
 

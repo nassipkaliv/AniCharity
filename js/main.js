@@ -59,6 +59,34 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var collapseElement = document.getElementById('moreAboutShefstvoMobile');
+  var toggleTextSpan = document.querySelector('.more-shefstvo .shefstvo-toggle-text');
+  var toggleIcon = document.querySelector('.more-shefstvo .shefstvo-toggle-icon');
+
+  // Function to update text and icon on collapse show/hide
+  function updateToggleElement(isCollapsed) {
+      if (isCollapsed) {
+          toggleTextSpan.textContent = 'Свернуть';
+          toggleIcon.style.transform = 'rotate(180deg)';
+      } else {
+          toggleTextSpan.textContent = 'Подробнее о шефстве';
+          toggleIcon.style.transform = 'rotate(0deg)';
+      }
+  }
+
+  // Event listener for when the collapse element is shown
+  collapseElement.addEventListener('show.bs.collapse', function() {
+      updateToggleElement(true);
+  });
+
+  // Event listener for when the collapse element is hidden
+  collapseElement.addEventListener('hide.bs.collapse', function() {
+      updateToggleElement(false);
+  });
+});
+
+
 var mySwiper = new Swiper('.mySwiper', {
   // Optional parameters
   slidesPerView: 3,
@@ -92,3 +120,30 @@ var mySwiper = new Swiper('.mySwiper', {
       before.style.animation = '';
     }
   });
+
+  // Initialize renamed Swiper
+var animalSwiper = new Swiper('.animalSwiper', {
+  // Optional parameters
+  slidesPerView: 1, // One slide per view on mobile
+  spaceBetween: 10, // Space between slides
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '"></span>'; // Default bullet rendering
+    },
+  },
+});
+
+var teamSwiper = new Swiper('.teamSwiper', {
+  
+  slidesPerView: 2,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '"></span>'; // Default bullet rendering
+    },
+  },
+});
