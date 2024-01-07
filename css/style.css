@@ -1315,7 +1315,7 @@ body {
   }
 
   #aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room {
-    padding-top: 75px;
+    padding-top: 60px;
   }
   
 
@@ -1612,6 +1612,50 @@ body {
 
   .shefstvo-mobile {
     display: block !important;
+  }
+
+  .articles {
+    display: none !important;
+  }
+
+  .articles-mobile {
+    display: block !important;
+  }
+
+  .article-subtitle {
+    font-size: 11px;
+  }
+
+  .more-articles {
+    font-size: 16px;
+  }
+
+  .whyimportant {
+    display: none;
+  }
+
+  .whyimportant-mobile {
+    display: block !important;
+  }
+
+  .smi {
+    display: none;
+  }
+
+  .smi-mobile {
+    display: block !important;
+  }
+
+  .ourservice {
+    display: none;
+  }
+
+  .ourservice-mobile {
+    display:  block !important;
+  }
+
+  #indexpage #aboutus .title-h2 {
+    font-size: 26px;
   }
 
 }
