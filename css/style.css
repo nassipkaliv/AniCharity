@@ -1497,13 +1497,9 @@ body {
     margin-top: 40px;
   }
 
-  .wrapper #zayavka, .container-fluid #zayavka {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
   #zayavka {
     background: var(--white);
+    padding: 32px 18px !important;
   }
 
   .zayavka-container-accepted {
@@ -1665,5 +1661,4 @@ body {
   .tab-panel-mobile {
     display: block !important;
   }
-
 }
