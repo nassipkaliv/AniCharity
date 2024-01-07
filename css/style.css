@@ -999,6 +999,37 @@ body {
   font-weight: 500;
 }
 
+#fullScreenModal .modal-content {
+  background: url("../assets/img/menubg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 60px;
+}
+
+.navbar-nav.menu {
+  gap: 16px;
+  margin-top: 60px;
+}
+
+.navbar-nav.menu .nav-link {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.menu-contacts {
+  margin-top: 60px;
+}
+
+.menu-contact-item {
+  gap: 12px;
+  color: #353F4B;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.81px; /* 148.815% */
+  margin-bottom: 20px;
+}
 
 @media (max-width: 768px) {
 
