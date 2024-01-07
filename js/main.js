@@ -82,3 +82,13 @@ var mySwiper = new Swiper('.mySwiper', {
     }
   }
 });
+
+  // This script ensures that the animation restarts on mouseover
+  document.querySelector('.btn-play').addEventListener('mouseover', function(e) {
+    const before = e.target.querySelector('::before');
+    if (before) {
+      before.style.animation = 'none';
+      void before.offsetWidth; // Trigger reflow to restart animation
+      before.style.animation = '';
+    }
+  });

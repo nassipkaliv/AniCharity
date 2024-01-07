@@ -1012,6 +1012,7 @@ body {
 
   .wrapper {
     padding: 40px 20px !important;
+    min-height: 70vh;
   }
 
   .title {
@@ -1377,6 +1378,7 @@ body {
 
   .aboutus-divider-contact {
     padding: 20px;
+    margin-top: 0;
   }
 
   .divider-text {
@@ -1502,6 +1504,22 @@ body {
 
   .zayavka-container-accepted {
     padding: 32px 18px !important;
+  }
+
+  .wrapper.desktop {
+    display: none !important  ;
+  }
+
+  .hospital-mobile {
+    display: block !important;
+  }
+
+  .help {
+    display: none;
+  }
+
+  .help-mobile {
+    display: block !important;
   }
 
 }
