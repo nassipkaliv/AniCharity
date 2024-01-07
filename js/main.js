@@ -59,34 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var collapseElement = document.getElementById('moreAboutShefstvoMobile');
-  var toggleTextSpan = document.querySelector('.more-shefstvo .shefstvo-toggle-text');
-  var toggleIcon = document.querySelector('.more-shefstvo .shefstvo-toggle-icon');
-
-  // Function to update text and icon on collapse show/hide
-  function updateToggleElement(isCollapsed) {
-      if (isCollapsed) {
-          toggleTextSpan.textContent = 'Свернуть';
-          toggleIcon.style.transform = 'rotate(180deg)';
-      } else {
-          toggleTextSpan.textContent = 'Подробнее о шефстве';
-          toggleIcon.style.transform = 'rotate(0deg)';
-      }
-  }
-
-  // Event listener for when the collapse element is shown
-  collapseElement.addEventListener('show.bs.collapse', function() {
-      updateToggleElement(true);
-  });
-
-  // Event listener for when the collapse element is hidden
-  collapseElement.addEventListener('hide.bs.collapse', function() {
-      updateToggleElement(false);
-  });
-});
-
-
 var mySwiper = new Swiper('.mySwiper', {
   // Optional parameters
   slidesPerView: 3,
@@ -111,15 +83,7 @@ var mySwiper = new Swiper('.mySwiper', {
   }
 });
 
-  // This script ensures that the animation restarts on mouseover
-  document.querySelector('.btn-play').addEventListener('mouseover', function(e) {
-    const before = e.target.querySelector('::before');
-    if (before) {
-      before.style.animation = 'none';
-      void before.offsetWidth; // Trigger reflow to restart animation
-      before.style.animation = '';
-    }
-  });
+
 
   // Initialize renamed Swiper
 var animalSwiper = new Swiper('.animalSwiper', {
@@ -145,5 +109,14 @@ var teamSwiper = new Swiper('.teamSwiper', {
     renderBullet: function (index, className) {
       return '<span class="' + className + '"></span>'; // Default bullet rendering
     },
+  },
+});
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 2,
+  spaceBetween: 32,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });

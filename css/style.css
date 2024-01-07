@@ -1658,4 +1658,12 @@ body {
     font-size: 26px;
   }
 
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel-mobile {
+    display: block !important;
+  }
+
 }
