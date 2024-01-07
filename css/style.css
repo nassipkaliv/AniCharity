@@ -805,9 +805,7 @@ body {
   padding: 100px 80px;
 }
 
-.form-row {
-  gap: 60px;
-}
+
 
 .form-check-text {
   color: var(--black);
@@ -1448,4 +1446,62 @@ body {
   #prepare {
     margin-bottom: 40px;
   }
+
+  .tab-panel-title {
+    font-size: 17px;
+  }
+
+  .tab-panel-number {
+    font-size: 10px;
+  }
+
+  .rooms.desktop {
+    display: none;
+  }
+
+  .rooms.mobile {
+    display: block !important;
+  }
+
+  .title-h4 {
+    font-size: 18px;
+  }
+
+  .row-room {
+    margin-bottom: 60px;
+  }
+
+  #perevozka {
+    margin-top: 32px;
+  }
+
+  .perevozka-desktop {
+    display: none !important; 
+  }
+
+  .perevozka-mobile {
+    display: block !important;
+  }
+
+  .zayavka-container {
+    padding: 32px 20px;
+  }
+
+  .form-bottom-row {
+    margin-top: 40px;
+  }
+
+  .wrapper #zayavka, .container-fluid #zayavka {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+  #zayavka {
+    background: var(--white);
+  }
+
+  .zayavka-container-accepted {
+    padding: 32px 18px !important;
+  }
+
 }
