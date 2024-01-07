@@ -1661,4 +1661,12 @@ body {
   .tab-panel-mobile {
     display: block !important;
   }
+
+  .thanks-footer {
+    display: none;
+  }
+
+  .thanks-footer.mobile {
+    display: block !important;
+  }
 }
