@@ -120,3 +120,21 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
+
+var desktopswiper = new Swiper('.desktopSwiper', {
+  slidesPerView: 3,
+  spaceBetween: 40,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // Enable pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
+});

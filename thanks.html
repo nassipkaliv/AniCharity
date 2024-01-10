@@ -107,40 +107,60 @@
             <h2 class="title-h2">Наши услуги</h2>
           </div>
           <div class="col d-flex align-items-center justify-content-end">
-            <div class="arrows">
-              <button class="btn border-0 bg-transparent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                  <path d="M16.3302 2.92004L3 16.3914M3 16.3914L18 29.8626M3 16.3914H33" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </svg>
-              </button>
-              <button class="btn border-0 bg-transparent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                  <path d="M16.6698 2.92004L30 16.3914M30 16.3914L15 29.8626M30 16.3914H0" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </svg>
-              </button>
+            <div class="swiper-pagination">
+              <div class="arrows">
+                <button class="btn border-0 bg-transparent swiper-button-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M16.6698 2.92004L30 16.3914M30 16.3914L15 29.8626M30 16.3914H0" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
+                  </svg>
+                </button>
+                <button class="btn border-0 bg-transparent swiper-button-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M16.3302 2.92004L3 16.3914M3 16.3914L18 29.8626M3 16.3914H33" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-4">
-            <div class="service-card">
-              <img src="assets/img/1.jpg" class="card-img-top" alt="Ветеринарные услуги">
-              <div class="service-card-title mt-2">Ветеринарные услуги</div>
+          <div class="swiper desktopSwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <img src="assets/img/1.jpg" class="card-img-top" alt="Ветеринарные услуги">
+                  <div class="service-card-title mt-2">Ветеринарные услуги</div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <img src="assets/img/2.jpg" class="card-img-top" alt="Гостиница для диких животных">
+                  <div class="service-card-title mt-2">Гостиница для диких животных</div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <img src="assets/img/3.jpg" class="card-img-top" alt="Перевозка диких животных">
+                  <div class="service-card-title mt-2">Перевозка диких животных</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <img src="assets/img/3.jpg" class="card-img-top" alt="Перевозка диких животных">
+                  <div class="service-card-title mt-2">Перевозка диких животных</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <img src="assets/img/3.jpg" class="card-img-top" alt="Перевозка диких животных">
+                  <div class="service-card-title mt-2">Перевозка диких животных</div>
+                </div>
+              </div>
+              
             </div>
-          </div>
-          <div class="col-4">
-            <div class="service-card">
-              <img src="assets/img/2.jpg" class="card-img-top" alt="Гостиница для диких  животных ">
-              <div class="service-card-title mt-2">Гостиница для диких  животных </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="service-card">
-              <img src="assets/img/3.jpg" class="card-img-top" alt="Перевозка диких  животных ">
-              <div class="service-card-title mt-2">Перевозка диких  животных </div>
-            </div>
-          </div>
-        </div>
   
         <div class="line"></div>
         <a href="services.html">
@@ -162,8 +182,9 @@
             Все услуги
           </button>
         </a>
+          </div>
+        </div>
       </div>
-  
       <div class="ourservice-mobile d-none" id="ourservice">
         <h2 class="title-h2 mb-3">Наши услуги</h2>
         <div class="swiper teamSwiper">
@@ -183,6 +204,10 @@
             <div class="swiper-slide">
               <img src="assets/img/3.jpg" class="card-img-top" alt="Перевозка диких  животных ">
               <div class="service-card-title mt-2">Перевозка диких  животных </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/2.jpg" class="card-img-top" alt="Гостиница для диких  животных ">
+              <div class="service-card-title mt-2">Гостиница для диких  животных </div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
