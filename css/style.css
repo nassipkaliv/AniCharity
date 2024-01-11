@@ -74,6 +74,19 @@ body {
   font-weight: 700;
 }
 
+.cst-contact-btn {
+  border-radius: 100px;
+  background: var(--primary);
+  display: flex;
+  padding: 13px 24px;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .nav-btn svg {
   fill: var(--black)
 }
@@ -499,7 +512,7 @@ body {
 
 .footer-title {
   color: #FFF;
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: 'Gilroy-Medium', sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 140%; /* 33.6px */
@@ -656,7 +669,8 @@ body {
 .divider-row {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  margin-left: 40px;
+  gap: 140px;
 }
 
 .divider-contact .cst-btn {
@@ -755,7 +769,7 @@ body {
 
 .subtitle-h2 {
   color: var(--black);
-  font-family: 'Gilroy-Medium', sans-serif;
+  font-family: 'Gilroy-Regular', sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 150%; /* 33px */
@@ -831,7 +845,7 @@ body {
 }
 
 .prepare-line {
-  height: 2px;
+  height: 1px;
   stroke-width: 1px;
   stroke: var(--Grey);
   background: var(--Grey);
@@ -1145,12 +1159,25 @@ body {
 
 
 
-/* Style the fill of the progress bar */
+
 .swiper-pagination-progressbar .progressbar-fill {
-  background: #F16835; /* Color of the progress bar fill */
-  width: 0; /* Initially no width */
-  height: 100%; /* Full height of the progress bar */
+  background: #F16835;
+  width: 0; 
+  height: 100%;
 }
+
+[data-bs-toggle="collapse"][aria-expanded="true"] .active-svg path {
+  stroke: #362E2C;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
 @media (max-width: 768px) {
 
   .modal-thanks-title {

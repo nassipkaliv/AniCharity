@@ -170,3 +170,16 @@ var desktopOneswiper = new Swiper('.desktopOneSwiper', {
     },
   },
 });
+
+
+$(document).ready(function() {
+  // Listen for the collapse show event
+  $('#collapseOne, #collapseTwo, #collapseThree, #collapseFour').on('show.bs.collapse', function () {
+    $(this).prev().find('.stroke-change').css('stroke', '#362E2C'); // Change stroke color to #362E2C
+  });
+
+  // Listen for the collapse hide event
+  $('#collapseOne, #collapseTwo, #collapseThree, #collapseFour').on('hide.bs.collapse', function () {
+    $(this).prev().find('.stroke-change').css('stroke', '#F16835'); // Change stroke color back to #F16835
+  });
+});
