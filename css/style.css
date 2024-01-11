@@ -1065,6 +1065,10 @@ body {
   margin-bottom: 20px;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  position: static;
+}
+
 @media (max-width: 768px) {
 
   .modal-thanks-title {

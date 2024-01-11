@@ -138,3 +138,20 @@ var desktopswiper = new Swiper('.desktopSwiper', {
     },
   },
 });
+
+var desktopOneswiper = new Swiper('.desktopOneSwiper', {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // Enable pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
+});
