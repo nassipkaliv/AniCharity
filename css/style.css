@@ -239,6 +239,7 @@ body {
   font-family: 'Gilroy-Medium', sans-serif;
   font-size: 32px;
   font-weight: 500;
+  line-height: 100%;
 }
 
 .modal-body p {
@@ -984,9 +985,14 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin-right: 10px;
-  margin-top: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background: url("../assets/img/btn-close.png") center/2em auto no-repeat !important;
+  opacity: 1;
+  height: 40px;
+  width: 40px;
 }
+
 
 .btn-play {
   position: relative;
@@ -1189,10 +1195,11 @@ a:hover {
   .modal-thanks-title {
     font-size: 32px;
   }
-
+  
   .modal-thanks-subtitle {
     font-size: 22px;
   }
+
 
   .navbar {
     padding: 15px 20px;
@@ -1296,9 +1303,13 @@ a:hover {
   }
 
   .menu-icon {
-    width: 50px !important;
-    height: 30px !important;
+    width: auto;
+    height: 45px !important;
   }
+
+  #indexpage #aboutus .wrapper-text {
+    line-height: 19px;
+}
 
   .navbar-toggler {
     margin-right: 0px !important;
