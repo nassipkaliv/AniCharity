@@ -141,7 +141,7 @@ body {
 }
 
 .wrapper {
-  padding: 15px 130px;
+  padding: 15px 115px;
   min-height: 80vh;
 }
 
@@ -777,13 +777,16 @@ body {
 }
 
 .about-block {
-  background: var(--Grey);
+  display: flex;
+  background: url("../assets/img/RectangleGray.png");
+  height: 650px;
+  flex-shrink: 0;
 }
 
 .bignumber {
   color: var(--black);
   font-family: 'Gilroy-Regular', sans-serif;
-  font-size: 120px;
+  font-size: 80px;
   font-weight: 400;
 }
 
@@ -869,7 +872,9 @@ body {
   padding: 100px 80px;
 }
 
-
+.aboutusintro .subtitle-h2 {
+  line-height: normal;
+}
 
 .form-check-text {
   color: var(--black);
@@ -1563,7 +1568,7 @@ a:hover {
     color: var(--black);
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 26px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 16px;
   }
 
