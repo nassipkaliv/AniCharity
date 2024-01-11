@@ -183,3 +183,18 @@ $(document).ready(function() {
     $(this).prev().find('.stroke-change').css('stroke', '#F16835'); // Change stroke color back to #F16835
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('toggleButton').addEventListener('click', function() {
+      var toggleText = document.querySelector('.shefstvo-toggle-text1');
+      var toggleIcon = document.getElementById('toggleIcon');
+
+      if (toggleText.textContent === 'Подробнее о шефстве') {
+          toggleText.textContent = 'Свернуть';
+          toggleIcon.style.transform = 'rotate(180deg)';
+      } else {
+          toggleText.textContent = 'Подробнее о шефстве';
+          toggleIcon.style.transform = 'rotate(0deg)';
+      }
+  });
+});
