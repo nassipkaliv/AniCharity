@@ -1178,6 +1178,12 @@ a:hover {
   color: var(--primary);
 }
 
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
 @media (max-width: 768px) {
 
   .modal-thanks-title {
