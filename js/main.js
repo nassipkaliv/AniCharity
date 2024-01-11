@@ -121,7 +121,7 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-var desktopswiper = new Swiper('.desktopSwiper', {
+var desktopSwiper = new Swiper('.desktopSwiper', {
   slidesPerView: 3,
   spaceBetween: 40,
   loop: true,
@@ -129,12 +129,27 @@ var desktopswiper = new Swiper('.desktopSwiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // Enable pagination
   pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    el: '.swiper-pagination-progressbar',
+    type: 'progressbar',
+  },
+  // Listen to Swiper events:
+  on: {
+    progress: function(progress) {
+      if (this.pagination.progressbar && this.pagination.progressbar.el) {
+        var progressBar = this.pagination.progressbar.el;
+        var progressBarFill = progressBar.querySelector('.progressbar-fill');
+        if (!progressBarFill) {
+          progressBarFill = document.createElement('div');
+          progressBarFill.className = 'progressbar-fill';
+          progressBar.appendChild(progressBarFill);
+        }
+        var totalProgress = progress * 100;
+        progressBarFill.style.width = totalProgress + '%';
+      }
+    },
+    slideChange: function() {
+      // Update progress bar on slide change, if necessary
     },
   },
 });

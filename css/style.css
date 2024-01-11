@@ -6,7 +6,8 @@
   --black: #362E2C;
   --Bg: #F7F6F1;
   --Grey: #C5C5C5;
-  --white: #FFF
+  --white: #FFF;
+  --swiper-theme-color: #F16835;
 }
 
 
@@ -53,7 +54,7 @@ body {
   padding: 13px 24px;
   align-items: center;
   gap: 10px;
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: 'Gilroy-Medium', sans-serif;
   color: #FFF;
   font-size: 22.149px;
   font-weight: 700;
@@ -67,10 +68,58 @@ body {
   padding: 13px 24px;
   align-items: center;
   gap: 10px;
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: 'Gilroy-Medium', sans-serif;
   color: #FFF;
   font-size: 22.149px;
   font-weight: 700;
+}
+
+.nav-btn svg {
+  fill: var(--black)
+}
+
+.nav-btn:hover {
+  background: #362E2C;
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover svg path {
+  fill: #F16835;
+  transition: fill 0.3s ease;
+}
+
+.nav-btn:disabled {
+  background: #EB835C;
+  color: #FFEEE8;
+}
+
+.nav-btn:disabled svg path {
+  fill: #514441;
+}
+
+.cst-btn svg {
+  fill: var(--black)
+}
+
+.cst-btn:hover {
+  background: #362E2C;
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cst-btn:hover svg path {
+  fill: #F16835;
+  transition: fill 0.3s ease;
+}
+
+.cst-btn:disabled {
+  background: #EB835C;
+  color: #FFEEE8;
+}
+
+.cst-btn:disabled svg path {
+  fill: #514441;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -971,7 +1020,7 @@ body {
 }
 
 .swiper-button-prev {
-  background-image: url("../assets/img/next-button.png");
+  background-image: url("../assets/img/prev-button.png");
   width: 33px;
   height: 33px;
   background-size: cover;
@@ -979,7 +1028,7 @@ body {
 }
 
 .swiper-button-next {
-  background-image: url("../assets/img/prev-button.png");
+  background-image: url("../assets/img/next-button.png");
   width: 33px;
   height: 33px;
   background-size: cover;
@@ -989,6 +1038,10 @@ body {
 
 .swiper-button-next::after, .swiper-button-prev::after {
   content: "";
+}
+
+#indexpage .navbar {
+  background: url("/assets/img/mainbg.png") !important;
 }
 
 @keyframes drawBorder {
@@ -1069,6 +1122,35 @@ body {
   position: static;
 }
 
+.swiper {
+  position: relative;
+  /* other styles */
+}
+
+.swiper-wrapper {
+  margin-bottom: 100px;
+}
+
+/* Style the progress bar */
+.swiper-pagination-progressbar {
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Set to 0 to stick to the bottom */
+  width: 100%; /* Full width */
+  height: 4px; /* Height of the progress bar */
+  background: #C5C5C5; /* Background of the progress bar */
+  z-index: 10; /* Ensure it's above other elements */
+  margin-top: auto;
+}
+
+
+
+/* Style the fill of the progress bar */
+.swiper-pagination-progressbar .progressbar-fill {
+  background: #F16835; /* Color of the progress bar fill */
+  width: 0; /* Initially no width */
+  height: 100%; /* Full height of the progress bar */
+}
 @media (max-width: 768px) {
 
   .modal-thanks-title {
