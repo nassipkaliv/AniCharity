@@ -1949,4 +1949,12 @@ a:hover {
   .team-mobile .subtitle-h2 {
     line-height: 134%;
   }
+
+  .navbar-toggler.desktop {
+    display: none !important;
+  }
+
+  .navbar-toggler.mobile {
+    display: flex !important;
+  }
 }
