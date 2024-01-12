@@ -45,6 +45,11 @@ body {
   font-size: 24px;
   font-weight: 500;
   line-height: 128%; /* 30.72px */
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
 }
 
 .nav-btn {
@@ -1200,6 +1205,18 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 100px;
+}
+
+.offcanvas-end {
+  width: 445px;
+
+}
+
+.offcanvas-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 110px 60px;
 }
 
 @media (max-width: 768px) {
