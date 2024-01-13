@@ -511,6 +511,7 @@ input[type=checkbox]{
   flex-shrink: 0;
   background: #362E2C;
   padding: 35px 110px;
+  margin-top: 85px;
 }
 
 .footer-title {
@@ -681,7 +682,7 @@ input[type=checkbox]{
   padding: 20px 40px;
 }
 
-#aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room {
+#aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room, #rates {
   padding-top: 135px;
 }
 
@@ -1265,6 +1266,14 @@ a:hover {
     min-height: 70vh;
   }
 
+  #articlespage .wrapper {
+    min-height: 50vh !important;
+  }
+
+  .wrapper.second {
+    min-height: 50vh !important;
+  }
+
   .title {
     font-size: 36px;
     margin-bottom: 32px;
@@ -1568,7 +1577,7 @@ a:hover {
     margin-bottom: 40px;
   }
 
-  #aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room {
+  #aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room, #rates {
     padding-top: 60px;
   }
   

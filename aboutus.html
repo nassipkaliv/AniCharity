@@ -6,7 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css" />
-  <title>Статьи</title>
+  <title>О нас</title>
 </head>
 <body class="aboutuspage" id="aboutuspage">
 
@@ -461,27 +461,7 @@
               </div>
               
             </div>
-  
-        <div class="line"></div>
-        <a href="services.html">
-          <button class="btn cst-btn mt-5 mx-auto">
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none">
-              <g clip-path="url(#clip0_387_80)">
-                <path d="M8.81998 21.4452C10.8421 23.2363 11.4669 24.9111 11.4443 26.2555C11.4108 28.2452 9.39503 29.8457 7.44563 29.4457C6.59698 29.2716 5.64871 28.7809 4.72834 27.6905C2.52113 25.0755 3.09039 21.8228 3.67933 21.0737C4.20565 20.3192 5.97063 19.3373 8.81998 21.4452Z" fill="#362E2C"/>
-                <path d="M12.0634 10.2661C7.80421 6.49323 8.99035 3.14792 10.3966 2.02421C10.4272 1.99973 10.4556 1.97708 10.4869 1.95338C10.8623 1.66845 13.5581 -0.166353 16.6119 3.32345C18.7337 5.74816 18.4327 9.84628 17.778 10.6791C17.1929 11.5178 15.2309 12.6093 12.0634 10.2661Z" fill="#362E2C"/>
-                <path d="M9.88738 13.6644C8.07598 7.44856 4.34972 7.64004 2.55412 8.64753C2.18431 8.90768 1.92766 9.21549 1.76058 9.552C0.349192 12.3945 3.86172 15.2979 6.76802 16.5727C7.59531 16.9355 8.25214 17.0871 8.76677 17.0964C10.267 17.1238 10.3072 15.105 9.88738 13.6644Z" fill="#362E2C"/>
-                <path d="M22.0099 7.1417C20.9155 13.5229 24.3491 14.9831 26.4045 14.8639C26.8509 14.7921 27.2165 14.6278 27.5141 14.3985C30.028 12.4615 28.1422 8.31278 26.088 5.89374C25.5033 5.20516 24.9792 4.78121 24.5207 4.54734C23.184 3.86558 22.2636 5.66278 22.0099 7.1417Z" fill="#362E2C"/>
-                <path d="M14.8075 25.2312C15.6611 20.7306 14.9973 19.2553 15.4992 18.5408C17.2511 15.7245 22.4689 19.2877 24.7168 18.437C32.4743 15.5012 32.2292 21.3428 29.9389 22.6944C23.5805 25.9099 23.1724 28.8713 20.082 31.4799C13.8034 35.6166 13.5399 29.0347 14.8075 25.2312Z" fill="#362E2C"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_387_80">
-                  <rect width="33" height="33" fill="white" transform="translate(0 0.5)"/>
-                </clipPath>
-              </defs>
-            </svg>
-            Все услуги
-          </button>
-        </a>
+            <div class="swiper-pagination-progressbar"></div>
           </div>
         </div>
       </div>
@@ -527,7 +507,7 @@
         </div>
       </div>
 
-      <div class="articles" id="articles">
+      <div class="rates" id="rates">
         <div class="row">
           <div class="col-lg-4 col-md-12 left-block">
             <h2 class="title-h2">Отзывы</h2>
@@ -577,12 +557,12 @@
               </a>
               <div class="d-flex align-items-end justify-content-start">
                 <div class="arrows">
-                  <button class="btn border-0 bg-transparent">
+                  <button class="btn border-0 bg-transparent swiper-button-prev">
                     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
                       <path d="M16.3302 2.92004L3 16.3914M3 16.3914L18 29.8626M3 16.3914H33" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
                     </svg>
                   </button>
-                  <button class="btn border-0 bg-transparent">
+                  <button class="btn border-0 bg-transparent swiper-button-next">
                     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
                       <path d="M16.6698 2.92004L30 16.3914M30 16.3914L15 29.8626M30 16.3914H0" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
                     </svg>
@@ -592,31 +572,79 @@
             </div>
           </div>
           <div class="col-lg-8 col-md-12 right-block">
-            <div class="row">
-              <div class="col">
-                <img class="img-fluid" src="assets/img/4.png" />
-                <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
-                <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+            <div class="swiper desktopSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/4.png" />
+                  <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
+                  <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/5.png" />
+                  <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
+                  <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/6.png" />
+                  <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
+                  <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/4.png" />
+                  <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
+                  <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/5.png" />
+                  <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
+                  <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+                </div>
               </div>
-              <div class="col">
-                <img class="img-fluid" src="assets/img/5.png" />
-                <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
-                <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
-              </div>
-              <div class="col">
-                <img class="img-fluid" src="assets/img/6.png" />
-                <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
-                <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
-              </div>
+              <div class="swiper-pagination-progressbar"></div>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-4 d-flex align-items-center justify-content-start">
+      </div>
+      <div class="articles-mobile d-none" id="articles">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 left-block">
+            <h2 class="title-h2">Важные статьи
+              о диких животных</h2>
+            <div class="swiper teamSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/4.png" />
+                  <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
+                  <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/5.png" />
+                  <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
+                  <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/6.png" />
+                  <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
+                  <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/6.png" />
+                  <h5 class="title-h5 mt-3">Закон о содержании диких животных</h5>
+                  <p class="article-subtitle mt-3">С 1 января 2020 года вступил в силу закон о запрете содержания диких животных…</p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <a href="articles.html" class="more-articles d-flex flex-row mt-3">
+                Читать все статьи
+                <svg class="ms-3" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <path d="M0.925781 1.88H16.0139L16.0141 0.380022H0.92598L0.925781 1.88Z" fill="#F16835"/>
+                  <rect width="1.5" height="15.0882" transform="matrix(1 0 0 -1 14.8516 15.4681)" fill="#F16835"/>
+                  <rect width="1.5" height="21.4667" transform="matrix(0.707107 0.707107 0.707107 -0.707107 0 15.5593)" fill="#F16835"/>
+                </svg>
+              </a>
+            </div>
           </div>
-          <div class="col-8  d-flex align-items-center">
-            <div class="line"></div>
-          </div>
+
         </div>
       </div>
       <div class="partners" id="partners">
