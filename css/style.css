@@ -682,7 +682,7 @@ input[type=checkbox]{
   padding: 20px 40px;
 }
 
-#aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room, #rates {
+#aboutus, #support, #team, #shefstvo, #help, #articles, #articles1, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room, #rates {
   padding-top: 135px;
 }
 
@@ -1592,7 +1592,7 @@ a:hover {
     margin-bottom: 40px;
   }
 
-  #aboutus, #support, #team, #shefstvo, #help, #articles, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room, #rates {
+  #aboutus, #support, #team, #shefstvo, #help, #articles, #articles1, #whyimportant, #smi, #partners, #ourservice, #prepare, #zayavka, #room, #rates {
     padding-top: 60px;
   }
   
