@@ -204,20 +204,48 @@
           <div class="col-lg-5 col-md-12 left-block d-flex flex-column justify-content-between">
             <div>
               <h2 class="title-h2">
-                Перевозим диких животных
+                Перевозим диких <br> животных
               </h2>
             </div>
             <div>
               <h2 class="title-h2">
                 Сервал
               </h2>
-              <p class="subtitle-h2 mt-5 mb-0">
-                Разрешены к перевозке в самолете, автомобиле и на поезде. 
+              <p class="subtitle-h2 mt-5 pb-4">
+                Разрешены к перевозке в самолете, автомобиле<br> и на поезде. 
               </p>
+              <div class="arrows mt-5">
+                <button class="btn border-0 bg-transparent swiper-button-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M16.3302 2.92004L3 16.3914M3 16.3914L18 29.8626M3 16.3914H33" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
+                  </svg>
+                </button>
+                <button class="btn border-0 bg-transparent swiper-button-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M16.6698 2.92004L30 16.3914M30 16.3914L15 29.8626M30 16.3914H0" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
           <div class="col-lg-7">
-            <img class="img-fluid w-100" src="assets/img/perevozkaimg.png" />
+            <div class="swiper desktopOneSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/perevozkaimg.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/perevozkaimg.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/perevozkaimg.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/perevozkaimg.png" />
+                </div>
+              </div>
+              <div class="swiper-pagination-progressbar"></div>
+            </div>
           </div>
         </div>
         <div class="row d-none perevozka-mobile">
@@ -236,25 +264,6 @@
                 Разрешены к перевозке в самолете, автомобиле и на поезде. 
               </p>
             </div>
-          </div>
-        </div>
-        <div class="row mt-lg-5 mt-lg-3">
-          <div class="col-5 d-flex align-items-center justify-content-start">
-            <div class="arrows">
-              <button class="btn border-0 bg-transparent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                  <path d="M16.3302 2.92004L3 16.3914M3 16.3914L18 29.8626M3 16.3914H33" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </svg>
-              </button>
-              <button class="btn border-0 bg-transparent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                  <path d="M16.6698 2.92004L30 16.3914M30 16.3914L15 29.8626M30 16.3914H0" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="col-7 d-flex align-items-center">
-            <div class="line"></div>
           </div>
         </div>
       </div>
@@ -352,7 +361,7 @@
   </div>
 
   <div class="hospital-mobile d-none">
-    <div class="wrapper">
+    <div class="wrapper second">
       <div class="container-fluid">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-md-2">
@@ -508,6 +517,7 @@
   </div>
 
       
+
   <footer class="footer mt-5">
     <div class="footer-title">
       Фонд защиты диких животных
@@ -561,50 +571,50 @@
       <div class="col-lg-6 col-sm-12 footer-right-block px-0">
         <div class="row px-0">
           <div class="col-2 mb-2">
-            <a class="footer-link" href="#">О нас</a>
+            <a class="footer-link" href="aboutus.html">О нас</a>
           </div>
           <div class="col-3 mb-2">
-            <a class="footer-link" href="#">Шефство</a>
+            <a class="footer-link" href="#shefstvo">Шефство</a>
           </div>
           <div class="col-3 mb-2">
-            <a class="footer-link" href="#">Партнёры</a>
+            <a class="footer-link" href="#partners">Партнёры</a>
           </div>
           <div class="col-4 mb-2">
-            <a class="footer-link" href="#">Сообщить о проблеме</a>
+            <a class="footer-link" href="#help">Сообщить о проблеме</a>
           </div>
         </div>
         <div class="row px-0">
           <div class="col-2 mb-2">
-            <a class="footer-link" href="#">Услуги</a>
+            <a class="footer-link" href="services.html">Услуги</a>
           </div>
           <div class="col-3 mb-2">
-            <a class="footer-link" href="#">Статьи</a>
+            <a class="footer-link" href="articles.html">Статьи</a>
           </div>
           <div class="col-3 mb-2">
-            <a class="footer-link" href="#">Вопросы</a>
+            <a class="footer-link" href="#help">Вопросы</a>
           </div>
           <div class="col-4 mb-2">
-            <a class="footer-link" href="#">Законодательство</a>
+            <a class="footer-link" href="#whyimportant">Законодательство</a>
           </div>
         </div>
         <div class="row px-0">
           <div class="col-2 mb-2">
-            <a class="footer-link" href="#">Помощь</a>
+            <a class="footer-link" href="#help">Помощь</a>
           </div>
           <div class="col-3 mb-2">
-            <a class="footer-link" href="#">Поддержать</a>
+            <a class="footer-link" href="support.html">Поддержать</a>
           </div>
           <div class="col-3 mb-2">
-            <a class="footer-link" href="#">Контакты</a>
+            <a class="footer-link" href="#aboutus-divider-contact">Контакты</a>
           </div>
           <div class="col-4 mb-2">
-            <a class="footer-link" href="#">Расследования</a>
+            <a class="footer-link" href="#articles1">Расследования</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row mt-3 w-100 footer-row-mobile d-none">
+    <div class="row mt-3 footer-row-mobile d-none">
       <div class="footer-contacts">
         <p>+7 (999) 444 22 11</p>
         <p>mail@mail.ru</p>
@@ -643,43 +653,43 @@
       </div>
       <div class="row">
         <div class="col-6">
-          <div class="footer-link">
-            <a href="#">О нас</a>
+          <div class="footer-link mb-2">
+            <a href="aboutus.html">О нас</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Услуги</a>
+          <div class="footer-link mb-2">
+            <a href="services.html">Услуги</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Помощь</a>
+          <div class="footer-link mb-2">
+            <a href="#help">Помощь</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Шефство</a>
+          <div class="footer-link mb-2">
+            <a href="#shefstvo">Шефство</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Статьи</a>
+          <div class="footer-link mb-2">
+            <a href="articles.html">Статьи</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Поддержать</a>
+          <div class="footer-link mb-2">
+            <a href="support.html">Поддержать</a>
           </div>
         </div>
         <div class="col-6">
-          <div class="footer-link">
-            <a href="#">Сообщить о проблеме</a>
+          <div class="footer-link mb-2">
+            <a href="#help">Сообщить о проблеме</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Законодательство</a>
+          <div class="footer-link mb-2">
+            <a href="#whyimportant">Законодательство</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Расследования</a>
+          <div class="footer-link mb-2">
+            <a href="#articles1">Расследования</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Партнёры</a>
+          <div class="footer-link mb-2">
+            <a href="#partners">Партнёры</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Вопросы</a>
+          <div class="footer-link mb-2">
+            <a href="#help">Вопросы</a>
           </div>
-          <div class="footer-link">
-            <a href="#">Контакты</a>
+          <div class="footer-link mb-2">
+            <a href="#aboutus-divider-contact">Контакты</a>
           </div>
         </div>
         </div>

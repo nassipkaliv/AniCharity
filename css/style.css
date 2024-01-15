@@ -1258,6 +1258,29 @@ a:hover {
   margin-bottom: 160px;
 }
 
+.custom-input {
+  color: #362E2C;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 30.54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &&::placeholder {
+    color: #362E2C;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 30.54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+}
+
+.custom-input:active {
+  border: none !important;
+  background: transparent;
+}
 
 @media (max-width: 430px) {
   .cst-contact-btn.tel {
@@ -1343,6 +1366,15 @@ a:hover {
   }
 
   .custom-btn {
+    font-size: 18px;
+    padding: 9px 34px;
+
+    ::placeholder {
+      font-size: 18px !important;
+    }
+  }
+
+  .custom-input {
     font-size: 18px;
     padding: 9px 34px;
   }
@@ -1753,6 +1785,7 @@ a:hover {
 
   .collapse-text {
     font-size: 16px;
+    line-height: normal;
   }
 
   .price-row {
@@ -1880,6 +1913,19 @@ a:hover {
   .service-card-title {
     font-size: 16px;
   }
+
+  .card-img-top {
+    height: 230px !important;
+  }
+
+  .card-img-top2 {
+    height: 158px;
+  }
+
+  .card-img-top3 {
+    height: 190px;
+  }
+
 
   .support {
     display: none;

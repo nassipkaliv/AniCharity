@@ -24,6 +24,37 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $('.news-arrow').click(function() {
+      $('.arrow-icon2').toggleClass('rotate');
+  });
+});
+
+$(document).ready(function() {
+  $('.news-arrow').click(function() {
+      $('.arrow-icon3').toggleClass('rotate');
+  });
+});
+
+$(document).ready(function() {
+  $('.news-arrow').click(function() {
+      $('.arrow-icon4').toggleClass('rotate');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const collapseDiagnostics = document.getElementById('collapseDiagnostics');
+  const titleH2 = document.querySelector('.title-h2');
+
+  collapseDiagnostics.addEventListener('show.bs.collapse', function () {
+    titleH2.style.color = 'var(--primary)';
+  });
+
+  collapseDiagnostics.addEventListener('hide.bs.collapse', function () {
+    titleH2.style.color = ''; // Reset to the default color or remove this line if you don't want to reset the color
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   var playButton = document.querySelector('.btn-play');
 
