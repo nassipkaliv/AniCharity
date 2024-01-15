@@ -257,3 +257,10 @@ $(document).ready(function() {
     $('#zayavkaModal').modal('show');
   });
 });
+
+function toggleReadMore() {
+  var readRateLink = document.querySelector('.subtitle-a');
+  var readRateDiv = document.querySelector('#readRate1', "#readRate2", "#readRate3");
+
+  readRateLink.style.display = readRateDiv.classList.contains('show') ? 'none' : 'none';
+}
