@@ -42,16 +42,13 @@ $(document).ready(function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const collapseDiagnostics = document.getElementById('collapseDiagnostics');
-  const titleH2 = document.querySelector('.title-h2');
-
-  collapseDiagnostics.addEventListener('show.bs.collapse', function () {
-    titleH2.style.color = 'var(--primary)';
+$(document).ready(function() {
+  $('#collapseDiagnostics2').on('show.bs.collapse', function () {
+    $('.title-h2').css('color', 'var(--primary)');
   });
 
-  collapseDiagnostics.addEventListener('hide.bs.collapse', function () {
-    titleH2.style.color = ''; // Reset to the default color or remove this line if you don't want to reset the color
+  $('#collapseDiagnostics2').on('hide.bs.collapse', function () {
+    $('.title-h2').css('color', '');
   });
 });
 

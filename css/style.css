@@ -2088,4 +2088,9 @@ a:hover {
     line-height: 134%;
     font-family: 'Gilroy-Medium', sans-serif;
   }
+
+  #diagnostics-line {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+  }
 }
