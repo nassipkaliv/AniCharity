@@ -988,6 +988,14 @@ input[type=checkbox]{
   background-color: transparent !important;
 }
 
+.subtitle-h2.perederzhka {
+  line-height: 134%;
+}
+
+.breadcrumb-perederzhka {
+  margin-bottom: 80px;
+}
+
 .btn-close {
   position: absolute;
   top: 0;
@@ -2059,4 +2067,13 @@ a:hover {
     margin-top: 16px !important;
     margin-bottom: 16px !important;
   }
+
+  .breadcrumb-perederzhka {
+    margin-bottom: 30px;
+  }
+
+  .sitter {
+    display: none !important;
+  }
+  
 }

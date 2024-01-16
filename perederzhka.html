@@ -27,7 +27,7 @@
             </clipPath>
           </defs>
         </svg>
-        Поддержать
+        Я хочу помочь
       </button>
       <button class="navbar-toggler d-flex mx-4 desktop" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
         <svg class="menu-icon" width="105" height="60" viewBox="0 0 105 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,98 +187,226 @@
   </div>
 
   
-  <div class="wrapper desktop">
+  <div class="wrapper">
     <div class="container-fluid">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mb-md-2">
+      <nav aria-label="breadcrumb" class="breadcrumb-perederzhka">
+        <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
           <li class="breadcrumb-item"><a href="services.html">Услуги</a></li>
           <li class="breadcrumb-item"><a href="perederzhka.html">Перевозка диких животных</a></li>
         </ol>
       </nav>
 
-      <h1 class="title my-lg-5 my-lg-3">Перевозка диких животных</h1>
-      
-      <div class="perevozka" id="perevozka">
-        <div class="row perevozka-desktop">
-          <div class="col-lg-5 col-md-12 left-block d-flex flex-column justify-content-between">
-            <div>
-              <h2 class="title-h2">
-                Перевозим диких <br> животных
-              </h2>
-            </div>
-            <div>
-              <h2 class="title-h2">
-                Сервал
-              </h2>
-              <p class="subtitle-h2 mt-5 pb-4">
-                Разрешены к перевозке в самолете, автомобиле<br> и на поезде. 
+      <h1 class="title my-lg-5 mt-5 mb-3">Передержка диких животных</h1>
+      <p class="subtitle-h2 perederzhka mt-2">
+        Если вам нужно оставить животное на время отпуска, мы готовы оказать помощь с временным пребыванием животного.
+        Наша команда опытных ситтеров обеспечивает проживание в комфортных условиях. <br>
+        Передержка диких животных в Москве – это отличный вариант на время отпуска. Питомец находится под круглосуточным квалифицированным присмотром, а вы спокойно отдыхаете и не переживаете о том, что с любимцем что-то произойдет.
+      </p>
+      <button class="btn cst-btn mt-5 sitter" data-bs-toggle="modal" data-bs-target="#contactModal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none">
+          <g clip-path="url(#clip0_387_80)">
+            <path d="M8.81998 21.4452C10.8421 23.2363 11.4669 24.9111 11.4443 26.2555C11.4108 28.2452 9.39503 29.8457 7.44563 29.4457C6.59698 29.2716 5.64871 28.7809 4.72834 27.6905C2.52113 25.0755 3.09039 21.8228 3.67933 21.0737C4.20565 20.3192 5.97063 19.3373 8.81998 21.4452Z" fill="#362E2C"/>
+            <path d="M12.0634 10.2661C7.80421 6.49323 8.99035 3.14792 10.3966 2.02421C10.4272 1.99973 10.4556 1.97708 10.4869 1.95338C10.8623 1.66845 13.5581 -0.166353 16.6119 3.32345C18.7337 5.74816 18.4327 9.84628 17.778 10.6791C17.1929 11.5178 15.2309 12.6093 12.0634 10.2661Z" fill="#362E2C"/>
+            <path d="M9.88738 13.6644C8.07598 7.44856 4.34972 7.64004 2.55412 8.64753C2.18431 8.90768 1.92766 9.21549 1.76058 9.552C0.349192 12.3945 3.86172 15.2979 6.76802 16.5727C7.59531 16.9355 8.25214 17.0871 8.76677 17.0964C10.267 17.1238 10.3072 15.105 9.88738 13.6644Z" fill="#362E2C"/>
+            <path d="M22.0099 7.1417C20.9155 13.5229 24.3491 14.9831 26.4045 14.8639C26.8509 14.7921 27.2165 14.6278 27.5141 14.3985C30.028 12.4615 28.1422 8.31278 26.088 5.89374C25.5033 5.20516 24.9792 4.78121 24.5207 4.54734C23.184 3.86558 22.2636 5.66278 22.0099 7.1417Z" fill="#362E2C"/>
+            <path d="M14.8075 25.2312C15.6611 20.7306 14.9973 19.2553 15.4992 18.5408C17.2511 15.7245 22.4689 19.2877 24.7168 18.437C32.4743 15.5012 32.2292 21.3428 29.9389 22.6944C23.5805 25.9099 23.1724 28.8713 20.082 31.4799C13.8034 35.6166 13.5399 29.0347 14.8075 25.2312Z" fill="#362E2C"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_387_80">
+              <rect width="33" height="33" fill="white" transform="translate(0 0.5)"/>
+            </clipPath>
+          </defs>
+        </svg>
+        Найти ситтера
+      </button>
+
+
+      <div class="team" id="team">
+        <div class="row">
+          <div class="col-4 left-block">
+            <div class="pb-5">
+              <h2 class="title-h2 mb-4">Команда</h2>
+              <p class="subtitle-h2 mt-5">
+              Разрешены к перевозке в самолете, <br>
+              автомобиле и на поезде. Разрешены к <br>
+              перевозке в самолете, автомобиле 
               </p>
-              <div class="arrows mt-5">
-                <button class="btn border-0 bg-transparent swiper-button-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                    <path d="M16.3302 2.92004L3 16.3914M3 16.3914L18 29.8626M3 16.3914H33" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                  </svg>
-                </button>
-                <button class="btn border-0 bg-transparent swiper-button-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                    <path d="M16.6698 2.92004L30 16.3914M30 16.3914L15 29.8626M30 16.3914H0" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
-                  </svg>
-                </button>
-              </div>
+            </div>
+            <div class="mt-5">
             </div>
           </div>
-          <div class="col-lg-7">
+          <div class="col-8 right-block">
+            <div class="swiper desktopSwiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/team2.png" />
+                  <h5 class="title-h5 mt-4">Вступите в совет попечителей</h5>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/team2.png" />
+                  <h5 class="title-h5 mt-4">Белоусов Владимир</h5>
+                  <p class="subtitle-h5">Ветеринар</p>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/team3.png" />
+                  <h5 class="title-h5 mt-4">Белоусов Владимир</h5>
+                  <p class="subtitle-h5">Ветеринар</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/team1.png" />
+                  <h5 class="title-h5 mt-4">Вступите в совет попечителей</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/team2.png" />
+                  <h5 class="title-h5 mt-4">Белоусов Владимир</h5>
+                  <p class="subtitle-h5">Ветеринар</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/team3.png" />
+                  <h5 class="title-h5 mt-4">Белоусов Владимир</h5>
+                  <p class="subtitle-h5">Ветеринар</p>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-mobile d-none" id="support">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 left-block">
+            <h2 class="title-h2">Команда</h2>
+            <p class="subtitle-h2 mb-3">
+              Разрешены к перевозке в самолете, <br>
+              автомобиле и на поезде. Разрешены к <br>
+              перевозке в самолете, автомобиле 
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12 right-block">
+            <div class="swiper teamSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid card-img-top3" src="assets/img/team1.png" />
+                  <h5 class="title-h5 mt-4">Вступите в совет попечителей</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid card-img-top3" src="assets/img/team2.png" />
+                <h5 class="title-h5 mt-4">Белоусов Владимир</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid card-img-top3" src="assets/img/team3.png" />
+                  <h5 class="title-h5 mt-4">Белоусов Владимир</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid card-img-top3" src="assets/img/team3.png" />
+                  <h5 class="title-h5 mt-4">Белоусов Владимир</h5>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="shefstvo" id="shefstvo">
+        <div class="row">
+          <div class="col-5 left-block">
+            <h2 class="title-h2">Галерея</h2>
+            <p class="wrapper-text my-5">
+              Мы приглашаем вас стать шефом над диким <br>
+              животным сегодня и внести свой вклад <br>
+              в сохранение нашей природы и ее уникальных
+              обитателей
+            </p>
+          </div>
+          <div class="col-7 right-block">
             <div class="swiper desktopOneSwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img class="img-fluid" src="assets/img/perevozkaimg.png" />
+                  <img class="img-fluid" src="assets/img/musya.png" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="img-fluid" src="assets/img/perevozkaimg.png" />
+                  <img class="img-fluid" src="assets/img/musya.png" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="img-fluid" src="assets/img/perevozkaimg.png" />
+                  <img class="img-fluid" src="assets/img/musya.png" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="img-fluid" src="assets/img/perevozkaimg.png" />
+                  <img class="img-fluid" src="assets/img/musya.png" />
                 </div>
               </div>
               <div class="swiper-pagination-progressbar"></div>
             </div>
           </div>
         </div>
-        <div class="row d-none perevozka-mobile">
+        <div class="row">
+          <div class="col-5 d-flex align-items-center justify-content-start">
+            <div class="swiper-pagination">
+              <div class="arrows">
+                <button class="btn border-0 bg-transparent swiper-button-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M16.6698 2.92004L30 16.3914M30 16.3914L15 29.8626M30 16.3914H0" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
+                  </svg>
+                </button>
+                <button class="btn border-0 bg-transparent swiper-button-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M16.3302 2.92004L3 16.3914M3 16.3914L18 29.8626M3 16.3914H33" stroke="#F16835" stroke-width="3" stroke-linecap="square"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-7  d-flex align-items-center">
+          </div>
+          </div>
+      </div>
+
+      <div class="shefstvo-mobile d-none" id="shefstvo">
+        <div class="row">
           <div class="col-lg-5 col-md-12 left-block">
-            <div>
-              <h2 class="title-h2">
-                Перевозим диких животных
-              </h2>
+            <h2 class="title-h2 mb-3">Галерея</h2>
+            <div class="swiper animalSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/musya.png" />
+                  <div class="line mt-5"></div>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/musya.png" />
+                  <div class="line mt-5"></div>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/musya.png" />
+                  <div class="line mt-5"></div>
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="assets/img/musya.png" />
+                  <div class="line mt-5"></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <img class="img-fluid" src="assets/img/perevozkaimg.png" />
-            <div>
-              <h2 class="title-h2">
-                Сервал
-              </h2>
-              <p class="subtitle-h2 mt-2 mb-0">
-                Разрешены к перевозке в самолете, автомобиле и на поезде. 
-              </p>
-            </div>
+          </div>
+          <div class="col-lg-7 col-md-12 right-block">
+            <p class="wrapper-text my-3">
+              Мы приглашаем вас стать шефом над диким <br>
+              животным сегодня и внести свой вклад <br>
+              в сохранение нашей природы и ее уникальных <br>
+              обитателей
+            </p>
           </div>
         </div>
       </div>
-      
-      <div class="zayavka" id="zayavka">
-        <div class="zayavka-container-accepted">
-         <div class="col-lg-12 col-md-12 d-flex flex-column justify-content-between">
-          <h1 class="title">Спасибо за заявку!</h1>
-          <h2 class="title-h2">Мы свяжемся с вами в ближайшее время, чтобы уточнить детали</h2>
-         </div>
-        </div>
-      </div>
+
+
 
       <div class="prepare" id="prepare">
-        <h1 class="title">Как подготовить животное к приему?</h1>
+        <h1 class="title">Как подготовить животное к передержке?</h1>
         <div class="row">
           <div class="col-lg-4 col-md-12">
             <img class="img-fluid prepare-img" src="assets/img/prepareimg.png" />
@@ -352,7 +480,7 @@
                   </clipPath>
                 </defs>
               </svg>
-              Записаться на прием
+              Задать вопрос
             </button>
           </div>
         </div>
@@ -360,163 +488,7 @@
     </div>
   </div>
 
-  <div class="hospital-mobile d-none">
-    <div class="wrapper second">
-      <div class="container-fluid">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-md-2">
-            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-            <li class="breadcrumb-item"><a href="services.html">Услуги</a></li>
-            <li class="breadcrumb-item"><a href="perederzhka.html">Передержка диких животных</a></li>
-          </ol>
-        </nav>
-  
-        <h1 class="title my-lg-5 my-lg-3">Передержка диких животных</h1>
-        
-        <div class="perevozka" id="perevozka">
-          <div class="swiper animalSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img class="img-fluid mb-3" src="assets/img/perevozkaimg.png" />
-                  <h2 class="title-h2">
-                    Сервал
-                  </h2>
-                  <p class="subtitle-h2 mt-2 mb-3">
-                    Разрешены к перевозке в самолете, автомобиле и на поезде. 
-                  </p>
-              </div>
-              <div class="swiper-slide">
-                <img class="img-fluid mb-3" src="assets/img/perevozkaimg.png" />
-                  <h2 class="title-h2">
-                    Сервал
-                  </h2>
-                  <p class="subtitle-h2 mt-2 mb-3">
-                    Разрешены к перевозке в самолете, автомобиле и на поезде. 
-                  </p>
-              </div>
-              <div class="swiper-slide">
-                <img class="img-fluid mb-3" src="assets/img/perevozkaimg.png" />
-                  <h2 class="title-h2">
-                    Сервал
-                  </h2>
-                  <p class="subtitle-h2 mt-2 mb-3">
-                    Разрешены к перевозке в самолете, автомобиле и на поезде. 
-                  </p>
-              </div>
-              <div class="swiper-slide">
-                <img class="img-fluid mb-3" src="assets/img/perevozkaimg.png" />
-                  <h2 class="title-h2">
-                    Сервал
-                  </h2>
-                  <p class="subtitle-h2 mt-2 mb-3">
-                    Разрешены к перевозке в самолете, автомобиле и на поезде. 
-                  </p>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
 
-    
-    <div class="zayavka" id="zayavka">
-      <div class="zayavka-container-accepted">
-       <div class="col-lg-8 col-md-12 d-flex flex-column justify-content-between">
-        <h1 class="title">Спасибо за заявку!</h1>
-        <h2 class="title-h2">Мы свяжемся с вами в ближайшее время, чтобы уточнить детали</h2>
-       </div>
-      </div>
-    </div>
-
-    <div class="wrapper second">
-      <div class="container-fluid">
-        <div class="prepare" id="prepare">
-          <h1 class="title">Как подготовить животное к приему?</h1>
-          <div class="row">
-            <div class="col-lg-3 col-md-12">
-              <img class="img-fluid prepare-img" src="assets/img/prepareimg.png" />
-            </div>
-            <div class="col-lg-9 col-md-12">
-              <div class="prepare-container mb-lg-4 mb-sm-2">
-                <div class="collapse-text">
-                  <ol>
-                    <li>
-                      Возьмите свой паспорт для составления договора. При вакцинации требуется паспорт питомца – мы выдадим в клинике, если у вашего питомца его еще нет.
-                    </li>
-                  </ol>
-                </div>
-                <div class="prepare-line mt-lg-4 mt-sm-2"></div>
-              </div>
-              <div class="prepare-container mb-lg-4 mb-sm-2">
-                <div class="collapse-text">
-                  <ol start="2">
-                    <li>
-                      В день визита к ветеринару не кормите животное.
-                    </li>
-                  </ol>
-                </div>
-                <div class="prepare-line mt-lg-4 mt-sm-2"></div>
-              </div>
-              <div class="prepare-container mb-lg-4 mb-sm-2">
-                <div class="collapse-text">
-                  <ol start="3">
-                    <li>
-                      Составьте список вопросов к врачу.
-                    </li>
-                  </ol>
-                </div>
-                <div class="prepare-line mt-lg-4 mt-sm-2"></div>
-              </div>
-              <div class="prepare-container mb-lg-4 mb-sm-2">
-                <div class="collapse-text">
-                  <ol start="4">
-                    <li>
-                      Обязательно возьмите поводок и намордник.
-                    </li>
-                  </ol>
-                </div>
-                <div class="prepare-line mt-lg-4 mt-sm-2"></div>
-              </div>
-              <div class="prepare-container mb-lg-4 mb-sm-2">
-                <div class="collapse-text">
-                  <ol start="5">
-                    <li>
-                      Возьмите свой паспорт для составления договора. При вакцинации требуется паспорт питомца 
-                    </li>
-                  </ol>
-                </div>
-                <div class="prepare-line mt-lg-4 mt-sm-2"></div>
-              </div>
-              <div class="prepare-text">
-                Если у вас остались вопросы, вы всегда можете задать их, позвонив нам по указанному номеру телефона, либо через контактную форму ниже
-              </div>
-              <button class="btn cst-btn mt-4 prepare-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none">
-                  <g clip-path="url(#clip0_387_80)">
-                    <path d="M8.81998 21.4452C10.8421 23.2363 11.4669 24.9111 11.4443 26.2555C11.4108 28.2452 9.39503 29.8457 7.44563 29.4457C6.59698 29.2716 5.64871 28.7809 4.72834 27.6905C2.52113 25.0755 3.09039 21.8228 3.67933 21.0737C4.20565 20.3192 5.97063 19.3373 8.81998 21.4452Z" fill="#362E2C"/>
-                    <path d="M12.0634 10.2661C7.80421 6.49323 8.99035 3.14792 10.3966 2.02421C10.4272 1.99973 10.4556 1.97708 10.4869 1.95338C10.8623 1.66845 13.5581 -0.166353 16.6119 3.32345C18.7337 5.74816 18.4327 9.84628 17.778 10.6791C17.1929 11.5178 15.2309 12.6093 12.0634 10.2661Z" fill="#362E2C"/>
-                    <path d="M9.88738 13.6644C8.07598 7.44856 4.34972 7.64004 2.55412 8.64753C2.18431 8.90768 1.92766 9.21549 1.76058 9.552C0.349192 12.3945 3.86172 15.2979 6.76802 16.5727C7.59531 16.9355 8.25214 17.0871 8.76677 17.0964C10.267 17.1238 10.3072 15.105 9.88738 13.6644Z" fill="#362E2C"/>
-                    <path d="M22.0099 7.1417C20.9155 13.5229 24.3491 14.9831 26.4045 14.8639C26.8509 14.7921 27.2165 14.6278 27.5141 14.3985C30.028 12.4615 28.1422 8.31278 26.088 5.89374C25.5033 5.20516 24.9792 4.78121 24.5207 4.54734C23.184 3.86558 22.2636 5.66278 22.0099 7.1417Z" fill="#362E2C"/>
-                    <path d="M14.8075 25.2312C15.6611 20.7306 14.9973 19.2553 15.4992 18.5408C17.2511 15.7245 22.4689 19.2877 24.7168 18.437C32.4743 15.5012 32.2292 21.3428 29.9389 22.6944C23.5805 25.9099 23.1724 28.8713 20.082 31.4799C13.8034 35.6166 13.5399 29.0347 14.8075 25.2312Z" fill="#362E2C"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_387_80">
-                      <rect width="33" height="33" fill="white" transform="translate(0 0.5)"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-                Записаться на прием
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-      
 
   <footer class="footer mt-5">
     <div class="footer-title">
