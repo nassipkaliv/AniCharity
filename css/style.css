@@ -2075,5 +2075,14 @@ a:hover {
   .sitter {
     display: none !important;
   }
+
+  .form-check-text { 
+    font-size: 18px;
+  }
+
+  .form-check-input {
+    width: 18px;
+    height: 18px;
+  }
   
 }

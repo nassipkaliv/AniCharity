@@ -264,3 +264,9 @@ function toggleReadMore() {
 
   readRateLink.style.display = readRateDiv.classList.contains('show') ? 'none' : 'none';
 }
+
+function redirectToAcceptedPage() {
+  console.log('Button clicked!');
+  window.location.href = 'accepted.html';
+}
+
