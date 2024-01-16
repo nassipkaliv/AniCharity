@@ -2071,7 +2071,7 @@ a:hover {
     font-family: 'Gilroy-Medium', sans-serif;
   }
 
-  #diagnostics-line {
+  #diagnostics-line, #diagnostics-line2, #diagnostics-line3, #diagnostics-line4  {
     margin-top: 16px !important;
     margin-bottom: 16px !important;
   }
