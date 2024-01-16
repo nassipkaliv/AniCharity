@@ -946,7 +946,7 @@ input[type=checkbox]{
 
 .page-link {
   display: flex !important;
-  color: var(--primary); 
+  color: var(--primary);
   background-color: transparent;
   border: none;
   text-align: center;
@@ -957,52 +957,35 @@ input[type=checkbox]{
 }
 
 .page-link:hover {
-  color: var(--white);
-  background-color: var(--primary);
-  border: none;
-  border-radius: 50%; 
-  width: 32px; 
-  height: 32px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 50%;
 }
 
-.page-item .page-link::after {
-  color: var(--white);
-  background-color: var(--primary);
-  border: none;
-  border-radius: 50%; 
-  width: 32px; 
-  height: 32px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+.pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}
 
 .page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
   background-color: var(--primary);
-  color: white; 
-  border-radius: 50%; 
-  width: 32px; 
-  height: 32px; 
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
+  border-color: var(--primary);
+  border-radius: 50% !important;margin: 0 5px;
 }
 
-.pagination-next .page-link {
-  background: none;
-  color: var(--black);
+.page-link:hover {
+  z-index: 3;
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    margin: 0 5px;
 }
 
-.pagination-next .page-link:hover {
-  color: var(--primary);
-  border: none;
-  width: auto;
-  height: auto;
-  background: none;
+.page-item.pagination-next .page-link {
+  color: var(--black) !important;
+}
+
+.page-item.pagination-next .page-link:hover {
+  color: var(--primary) !important;
+  border: none !important;
+  background-color: transparent !important;
 }
 
 .btn-close {
