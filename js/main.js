@@ -18,39 +18,86 @@ $(document).ready(function() {
   });
 });
 
+
 $(document).ready(function() {
-  $('.news-arrow').click(function() {
-      $('.arrow-icon').toggleClass('rotate');
+  $('#collapseDiagnostics2').on('shown.bs.collapse', function () {
+      $('#diagnostics-line2').hide();
+  });
+
+  $('#collapseDiagnostics2').on('hidden.bs.collapse', function () {
+      $('#diagnostics-line2').show();
   });
 });
 
 $(document).ready(function() {
-  $('.news-arrow').click(function() {
-      $('.arrow-icon2').toggleClass('rotate');
+  $('#collapseDiagnostics3').on('shown.bs.collapse', function () {
+      $('#diagnostics-line3').hide();
+  });
+
+  $('#collapseDiagnostics3').on('hidden.bs.collapse', function () {
+      $('#diagnostics-line3').show();
   });
 });
 
 $(document).ready(function() {
-  $('.news-arrow').click(function() {
-      $('.arrow-icon3').toggleClass('rotate');
+  $('#collapseDiagnostics4').on('shown.bs.collapse', function () {
+      $('#diagnostics-line4').hide();
+  });
+
+  $('#collapseDiagnostics4').on('hidden.bs.collapse', function () {
+      $('#diagnostics-line4').show();
   });
 });
 
-$(document).ready(function() {
-  $('.news-arrow').click(function() {
-      $('.arrow-icon4').toggleClass('rotate');
-  });
+$('#collapseDiagnostics').on('show.bs.collapse', function () {
+  // Поворот стрелки на 180 градусов
+  $('#arrow1').css('transform', 'rotate(180deg)');
+  $('#title1').addClass('active');
 });
 
-$(document).ready(function() {
-  $('#collapseDiagnostics2').on('show.bs.collapse', function () {
-    $('.title-h2').css('color', 'var(--primary)');
-  });
-
-  $('#collapseDiagnostics2').on('hide.bs.collapse', function () {
-    $('.title-h2').css('color', '');
-  });
+$('#collapseDiagnostics').on('hide.bs.collapse', function () {
+  // Возвращение стрелки в исходное положение
+  $('#arrow1').css('transform', 'rotate(0deg)');
+  $('#title1').removeClass('active');
 });
+
+
+$('#collapseDiagnostics2').on('show.bs.collapse', function () {
+  // Поворот стрелки на 180 градусов
+  $('#arrow2').css('transform', 'rotate(180deg)');
+  $('#title2').addClass('active');
+});
+
+$('#collapseDiagnostics2').on('hide.bs.collapse', function () {
+  // Возвращение стрелки в исходное положение
+  $('#arrow2').css('transform', 'rotate(0deg)');
+  $('#title2').removeClass('active');
+});
+
+$('#collapseDiagnostics3').on('show.bs.collapse', function () {
+  // Поворот стрелки на 180 градусов
+  $('#arrow3').css('transform', 'rotate(180deg)');
+  $('#title3').addClass('active');
+});
+
+$('#collapseDiagnostics3').on('hide.bs.collapse', function () {
+  // Возвращение стрелки в исходное положение
+  $('#arrow3').css('transform', 'rotate(0deg)');
+  $('#title3').removeClass('active');
+});
+
+$('#collapseDiagnostics4').on('show.bs.collapse', function () {
+  // Поворот стрелки на 180 градусов
+  $('#arrow4').css('transform', 'rotate(180deg)');
+  $('#title4').addClass('active');
+});
+
+$('#collapseDiagnostics4').on('hide.bs.collapse', function () {
+  // Возвращение стрелки в исходное положение
+  $('#arrow4').css('transform', 'rotate(0deg)');
+  $('#title4').removeClass('active');
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var playButton = document.querySelector('.btn-play');

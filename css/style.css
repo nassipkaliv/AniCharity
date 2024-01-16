@@ -507,6 +507,14 @@ input[type=checkbox]{
   cursor: pointer;
 }
 
+.arrow-icon1, .arrow-icon2, .arrow-icon3, .arrow-icon4 {
+  transition: transform 0.3s ease; /* Добавляем плавность с продолжительностью 0.3 секунды и функцией ускорения ease */
+}
+
+#title1.active, #title2.active, #title3.active, #title4.active {
+  color: var(--primary);
+}
+
 .footer {
   flex-shrink: 0;
   background: #362E2C;
