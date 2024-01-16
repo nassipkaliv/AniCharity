@@ -98,6 +98,14 @@ $('#collapseDiagnostics4').on('hide.bs.collapse', function () {
   $('#title4').removeClass('active');
 });
 
+$('#teamMore').on('show.bs.collapse', function () {
+  $('.team-show').hide();
+});
+
+$('#teamMore').on('hide.bs.collapse', function () {
+  $('.team-show').show();
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var playButton = document.querySelector('.btn-play');
