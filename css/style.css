@@ -1601,13 +1601,9 @@ a:hover {
 
   .footer {
     background: #362E2C;
-    padding: 30px 18px;
+    padding: 27px 18px;
   }
-
-  .footer .row {
-    padding-left: 3px;
-    padding-right: 0;
-  }
+  
 
   .footer-title {
     font-size: 18px;
