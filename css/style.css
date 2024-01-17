@@ -1601,7 +1601,12 @@ a:hover {
 
   .footer {
     background: #362E2C;
-    padding: 27px 25px;
+    padding: 30px 18px;
+  }
+
+  .footer .row {
+    padding-left: 3px;
+    padding-right: 0;
   }
 
   .footer-title {
@@ -1639,7 +1644,7 @@ a:hover {
     color: var(--white, #FFF);
     font-feature-settings: 'calt' off;
     font-family: 'Gilroy-Regular', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 25.6px */
