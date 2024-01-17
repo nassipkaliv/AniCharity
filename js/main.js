@@ -320,3 +320,8 @@ function redirectToAcceptedPage() {
   window.location.href = 'accepted.html';
 }
 
+function toggleTab(clickedElement) {
+  $('.tab-panel-title, .tab-panel-number').removeClass('active');
+  
+  $(clickedElement).find('.tab-panel-title, .tab-panel-number').addClass('active');
+}
