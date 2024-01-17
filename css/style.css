@@ -1312,6 +1312,10 @@ a:hover {
 
 @media (max-width: 768px) {
 
+  #letZayavka {
+    padding: 20px 40px !important;
+  }
+
   #contactModal .cst-btn {
     padding: 15px 40px;
     gap: 8px;
