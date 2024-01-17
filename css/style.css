@@ -87,7 +87,7 @@ body {
   align-items: center;
   gap: 10px;
   color: var(--white);
-  font-family: 'Gilroy-Medium', sans-serif;
+  font-family: 'Gilroy-Regular', sans-serif;
   font-size: 19px;
   font-weight: 600;
 }
@@ -1784,16 +1784,22 @@ a:hover {
   .cst-contact-btn.tel {
     padding: 8px 16px !important;
     width: 70% ;
+    font-weight: 600;
+    font-family: 'Gilroy-Regular', sans-serif;
   }
 
   .cst-contact-btn.whatsapp {
     padding: 8px 16px !important;
     width: 90% ;
+    font-weight: 600;
+    font-family: 'Gilroy-Regular', sans-serif;
   }
 
   .cst-contact-btn.telegram {
     padding: 8px 16px !important;
     width: 85% ;
+    font-weight: 600;
+    font-family: 'Gilroy-Regular', sans-serif;
   }
 
   .more-articles-div {
