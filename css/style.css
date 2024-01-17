@@ -88,7 +88,7 @@ body {
   gap: 10px;
   color: var(--white);
   font-family: 'Gilroy-Medium', sans-serif;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 600;
 }
 
@@ -133,6 +133,26 @@ body {
 }
 
 .cst-btn:disabled svg path {
+  fill: #514441;
+}
+
+.cst-contact-btn:hover {
+  background: #362E2C;
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cst-contact-btn:hover svg path {
+  fill: #F16835;
+  transition: fill 0.3s ease;
+}
+
+.cst-contact-btn:disabled {
+  background: #EB835C;
+  color: #FFEEE8;
+}
+
+.cst-contact-btn:disabled svg path {
   fill: #514441;
 }
 
@@ -670,7 +690,7 @@ input[type=checkbox]{
   color: #362E2C;
   /* h2 */
   font-family: 'Gilroy-Medium', sans-serif;
-  font-size: 58px;
+  font-size: 54px;
   font-weight: 600;
   line-height: 70px;
 }
@@ -682,6 +702,7 @@ input[type=checkbox]{
 .divider-row {
   display: flex;
   flex-direction: row;
+  gap: 100px;
 }
 
 
@@ -1283,10 +1304,28 @@ a:hover {
   text-align: start !important;
 }
 
+#contactModal .modal-content {
+  padding: 60px 40px 40px 40px;
+}
+
+#contactModal .cst-btn {
+  padding: 20px 60px;
+}
+
 
 @media (max-width: 768px) {
 
-  
+  #contactModal .cst-btn {
+    padding: 15px 40px;
+    gap: 8px;
+    font-weight: 600;
+    font-family: 'Gilroy-Regular', sans-serif;
+  }
+
+  #contactModal .cst-btn svg {
+    width: 30px;
+    height: 30px;
+  }
 
   .modal-thanks-title {
     font-size: 32px;
@@ -1693,6 +1732,7 @@ a:hover {
 
   .title-h5 {
     font-size: 14px;
+    line-height: normal;
   }
 
   .subtitle-h5 {
@@ -1909,7 +1949,7 @@ a:hover {
   }
 
   .card-img-top3 {
-    height: 190px;
+    height: 210px;
   }
 
 
