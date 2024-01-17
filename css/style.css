@@ -1317,6 +1317,7 @@ a:hover {
     gap: 8px;
     font-weight: 600;
     font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 15px;
   }
 
   #contactModal .cst-btn svg {
@@ -1641,10 +1642,10 @@ a:hover {
     color: var(--white, #FFF);
     font-feature-settings: 'calt' off;
     font-family: 'Gilroy-Regular', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 25.6px */
+    line-height: normal;
   }
   
   .end-text {
@@ -1682,7 +1683,7 @@ a:hover {
   }
   
   #servicespage .service-title {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 500;
   }
 
@@ -1813,7 +1814,7 @@ a:hover {
   }
 
   .services-item .title-h2 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: normal;
   }
 
