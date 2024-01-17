@@ -1318,6 +1318,7 @@ a:hover {
     font-weight: 600;
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 14px;
+    margin-right: 0px !important;
   }
 
   #contactModal .cst-btn svg {
