@@ -1246,9 +1246,6 @@ a:hover {
 }
 
 .offcanvas-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 110px 60px;
 }
 
