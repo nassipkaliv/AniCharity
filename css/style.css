@@ -1680,7 +1680,8 @@ a:hover {
   }
   
   #servicespage .service-title {
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: 500;
   }
 
   #servicespage .line {
@@ -1807,6 +1808,11 @@ a:hover {
   
   .service-img {
     display: none !important;
+  }
+
+  .services-item .title-h2 {
+    font-size: 22px;
+    line-height: normal;
   }
 
   .collapse-text {
