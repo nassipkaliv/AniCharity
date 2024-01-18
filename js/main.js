@@ -323,6 +323,18 @@ function redirectToArticles() {
   window.location.href = 'articles.html';
 }
 
+function redirectToVeterinar() {
+  window.location.href = 'veterinar.html';
+}
+
+function redirectToPerevozka() {
+  window.location.href = 'perevozka.html';
+}
+
+function redirectToHotel() {
+  window.location.href = 'hotel.html';
+}
+
 function toggleTab(clickedElement) {
   $('.tab-panel-title, .tab-panel-number').removeClass('active');
   
