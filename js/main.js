@@ -146,6 +146,10 @@ var mySwiper = new Swiper('.mySwiper', {
   // Optional parameters
   slidesPerView: 3,
   spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -339,4 +343,34 @@ function toggleTab(clickedElement) {
   $('.tab-panel-title, .tab-panel-number').removeClass('active');
   
   $(clickedElement).find('.tab-panel-title, .tab-panel-number').addClass('active');
+}
+
+function toggleReadMore1(element) {
+  var collapseElement = document.getElementById('readRate1');
+
+  // Check if the collapse is opening
+  if (!collapseElement.classList.contains('show')) {
+      // Remove the link when the collapse is expanded
+      element.parentNode.removeChild(element);
+  }
+}
+
+function toggleReadMore2(element) {
+  var collapseElement = document.getElementById('readRate2');
+
+  // Check if the collapse is opening
+  if (!collapseElement.classList.contains('show')) {
+      // Remove the link when the collapse is expanded
+      element.parentNode.removeChild(element);
+  }
+}
+
+function toggleReadMore3(element) {
+  var collapseElement = document.getElementById('readRate3');
+
+  // Check if the collapse is opening
+  if (!collapseElement.classList.contains('show')) {
+      // Remove the link when the collapse is expanded
+      element.parentNode.removeChild(element);
+  }
 }
