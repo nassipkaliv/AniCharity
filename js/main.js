@@ -316,8 +316,11 @@ $(document).ready(function() {
 
 
 function redirectToAcceptedPage() {
-  console.log('Button clicked!');
   window.location.href = 'accepted.html';
+}
+
+function redirectToArticles() {
+  window.location.href = 'articles.html';
 }
 
 function toggleTab(clickedElement) {

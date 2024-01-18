@@ -1291,6 +1291,10 @@ a:hover {
 
 }
 
+.swiper-slide {
+  cursor: pointer;
+}
+
 .custom-input:active {
   border: none !important;
   background: transparent;
@@ -1372,8 +1376,12 @@ a:hover {
     padding: 7.111px 18.962px;
     margin-right: 15px;
     font-size: 18.962px;
-    gap: 0px;
+    gap: 5px;
   }
+
+  #support .cst-btn {
+    margin-top: 24px;
+}
 
   .wrapper {
     padding: 40px 20px !important;
