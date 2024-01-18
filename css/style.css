@@ -181,6 +181,10 @@ body {
   font-weight: 500;
 }
 
+.sovet {
+  cursor: pointer;
+}
+
 .custom-btn {
   display: flex;
   padding: 32px;
