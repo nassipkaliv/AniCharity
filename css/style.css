@@ -221,7 +221,7 @@ body {
   border-bottom: 1px solid #B8B8B8 !important;
 
   &::placeholder {
-  color: var(--black) !important;
+  color: var(--day-text-icons-text-03, rgba(27, 31, 59, 0.40)) !important;
   font-family: 'Gilroy-Regular', sans-serif;
   font-size: 30.54px;
   font-weight: 400;
@@ -289,7 +289,7 @@ input[type=checkbox]{
   font-weight: 500;
 
   &::placeholder {
-    color: #A7A6A4 !important;
+    color: var(--day-text-icons-text-03, rgba(27, 31, 59, 0.40)) !important;
     font-family: 'Gilroy-Medium', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -1281,7 +1281,7 @@ a:hover {
   line-height: normal;
 
   &&::placeholder {
-    color: #362E2C;
+    color: var(--day-text-icons-text-03, rgba(27, 31, 59, 0.40)) !important;
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 30.54px;
     font-style: normal;
@@ -1289,6 +1289,12 @@ a:hover {
     line-height: normal;
   }
 
+}
+
+.other-price input {
+  &&::placeholder {
+    color: var(--black) !important;
+  }
 }
 
 .swiper-slide {
@@ -2169,4 +2175,8 @@ a:hover {
     height: 18px;
   }
   
+  .collapse.show + .more-shefstvo {
+    display: none !important;
+  }
+
 }

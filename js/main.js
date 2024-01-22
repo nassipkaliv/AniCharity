@@ -147,7 +147,7 @@ var mySwiper = new Swiper('.mySwiper', {
   slidesPerView: 3,
   spaceBetween: 30,
   autoplay: {
-    delay: 2500,
+    delay: 1000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -158,7 +158,6 @@ var mySwiper = new Swiper('.mySwiper', {
   loop: true,
   // Responsive breakpoints
   breakpoints: {
-
     780: {
       slidesPerView: 3,
       spaceBetween: 40
@@ -167,7 +166,9 @@ var mySwiper = new Swiper('.mySwiper', {
       slidesPerView: 5,
       spaceBetween: 40
     }
-  }
+  },
+  // Smooth scrolling options
+  speed: 800, // Adjust the speed as needed
 });
 
 
@@ -374,3 +375,25 @@ function toggleReadMore3(element) {
       element.parentNode.removeChild(element);
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var collapseElement = document.getElementById('moreAboutShefstvoMobile');
+  var toggleButton = document.getElementById('toggleButton');
+  var moreShefstvo = document.querySelector('.more-shefstvo');
+
+  collapseElement.addEventListener('show.bs.collapse', function () {
+    moreShefstvo.style.display = 'none';
+  });
+
+  collapseElement.addEventListener('hidden.bs.collapse', function () {
+    moreShefstvo.style.display = 'flex';
+  });
+
+  toggleButton.addEventListener('click', function () {
+    if (collapseElement.classList.contains('show')) {
+      moreShefstvo.style.display = 'flex';
+    } else {
+      moreShefstvo.style.display = 'none';
+    }
+  });
+});
